@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="text_header">Your Shopping List</string>
+    <string name="add_items">Add Items</string>
+    <string name="text_header_2">List Of Items</string>
+    <string name="item_1">Bread</string>
+    <string name="item_2">Chesse</string>
+    <string name="item_3">Butter</string>
+    <string name="item_4">Egg</string>
+    <string name="item_5">Milk</string>
+    <string name="item_6">Fruit Juice</string>
+    <string name="item_7">Cake</string>
+    <string name="item_8">Cookies</string>
+    <string name="item_9">Apples</string>
+    <string name="item_10">Oranges</string>
+</resources>
