@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5F5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="194dp"
+        android:layout_height="136dp"
+        android:src="@drawable/lines_logo"
+        app:layout_constraintBottom_toTopOf="@+id/Email_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Email_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/type_your_email_address"
+        android:inputType="text|textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/type_your_password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email_edittext" />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="checkValidation"
+        android:text="@string/log_in"
+        android:textSize="18sp"
+        app:backgroundTint="#7986CB"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_edittext" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

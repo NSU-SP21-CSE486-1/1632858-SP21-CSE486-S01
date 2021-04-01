@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="type_your_email_address">Type your email address</string>
+    <string name="type_your_password">Type your password</string>
+    <string name="log_in">Log In</string>
+    <string name="toast_message">Wrong email or password. Try again!</string>
+</resources>
