@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CodingAssignment</string>
+    <string name="welcome_onboard">Welcome Onboard!</string>
+    <string name="let_s_help_you_find_your_dream_job">Let us help you find your dream job</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_7_digit_nsu_id">Enter your 7 digit NSU id</string>
+    <string name="next">Next</string>
+    <string name="log_in">Log In</string>
+    <string name="already_havean_account">Already havean account?</string>
+    <string name="enter_your_nsu_e_mail">Enter your NSU e-mail</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="toast_message">So far works</string>
+</resources>
