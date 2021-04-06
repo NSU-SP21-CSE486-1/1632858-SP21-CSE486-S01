@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/welcome_title"
+        android:id="@+id/register_title_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -30,7 +30,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_title" />
+        app:layout_constraintTop_toBottomOf="@+id/register_title_1" />
 
     <EditText
         android:id="@+id/full_name"
@@ -44,10 +44,29 @@
         android:hint="@string/enter_your_full_name"
         android:inputType="textPersonName"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tagline_1" />
+
+<!--    <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText-->
+<!--        android:id="@+id/datePickerEditText"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="@drawable/round_border"-->
+<!--        android:hint="@string/select_date"-->
+<!--        android:padding="06dp"-->
+<!--        android:textColor="#4C4C4C"-->
+<!--        android:textColorHint="#878686"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tagline_1" />-->
 
     <EditText
         android:id="@+id/nsu_id"
@@ -61,6 +80,8 @@
         android:hint="@string/enter_your_7_digit_nsu_id"
         android:inputType="textPersonName"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/full_name" />
@@ -77,6 +98,8 @@
         android:hint="@string/enter_your_nsu_e_mail"
         android:inputType="textPersonName"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nsu_id" />
@@ -93,6 +116,8 @@
         android:hint="@string/enter_your_phone_number"
         android:inputType="textPersonName"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nsu_mail" />
@@ -109,6 +134,8 @@
         android:hint="@string/enter_password"
         android:inputType="textPassword"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
@@ -125,6 +152,8 @@
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:padding="15dp"
+        android:textColor="#4C4C4C"
+        android:textColorHint="#878686"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -134,7 +163,7 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="70dp"
         android:fontFamily="@font/poppins_semibold"
