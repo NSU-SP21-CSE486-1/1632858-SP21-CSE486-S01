@@ -18,4 +18,16 @@
         <item>Department2</item>
         <item>Department3</item>
     </string-array>
+
+    <string-array name="depName_2">
+        <item>Department4</item>
+        <item>Department5</item>
+        <item>Department6</item>
+    </string-array>
+
+    <string-array name="depName_3">
+        <item>Department7</item>
+        <item>Department8</item>
+        <item>Department9</item>
+    </string-array>
 </resources>
