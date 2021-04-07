@@ -30,4 +30,9 @@
         <item>Department8</item>
         <item>Department9</item>
     </string-array>
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>

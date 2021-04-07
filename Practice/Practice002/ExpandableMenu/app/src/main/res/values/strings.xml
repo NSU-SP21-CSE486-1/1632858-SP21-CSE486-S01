@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExpandableMenu</string>
+    <string name="present_address">Present Address</string>
+    <string name="your_present_address">Your present address</string>
+    <string name="country">Country</string>
+    <string name="district">District</string>
+</resources>
