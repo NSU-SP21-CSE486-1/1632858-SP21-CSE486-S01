@@ -37,7 +37,7 @@
         app:placeholderTextColor="@color/black">
 
         <AutoCompleteTextView
-            android:id="@+id/school_name_view"
+            android:id="@+id/school_name_dropdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <AutoCompleteTextView
-            android:id="@+id/dep_name_list"
+            android:id="@+id/dep_name_dropdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
@@ -80,7 +80,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
-        android:drawableStart="@drawable/calendar"
+        android:drawableEnd="@drawable/calendar"
         android:background="@drawable/round_border"
         android:hint="@string/select_date_of_birth"
         android:padding="16dp"
@@ -108,5 +108,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_of_birth" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:boxBackgroundColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nid_number">
+
+        <AutoCompleteTextView
+            android:id="@+id/gender_list_dropdwon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:inputType="none"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/gender"
+            android:textColor="#4C4C4C" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

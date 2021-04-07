@@ -19,4 +19,5 @@
     <string name="name_of_your_department">Name of your department</string>
     <string name="select_date_of_birth">Your date of birth</string>
     <string name="your_nid_number">Your nid number</string>
+    <string name="gender">Gender</string>
 </resources>
