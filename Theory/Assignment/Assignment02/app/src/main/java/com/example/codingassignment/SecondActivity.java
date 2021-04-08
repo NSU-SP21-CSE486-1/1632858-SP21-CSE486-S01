@@ -1,12 +1,17 @@
 package com.example.codingassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
+import android.transition.AutoTransition;
+import android.transition.TransitionManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Toast;
 
 import static android.R.layout.simple_list_item_1;
 
@@ -14,6 +19,13 @@ public class SecondActivity extends AppCompatActivity {
     private AutoCompleteTextView mSchoolNameList;
     private AutoCompleteTextView mDepartmentNameList;
     private AutoCompleteTextView mGenderList;
+
+    private ConstraintLayout mPresentAddressExpandableView;
+    private CardView mPresentAddressCardview;
+
+    private ConstraintLayout mPermanentAddressExpandableView;
+    private CardView mPermanentAddressCardview;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +34,12 @@ public class SecondActivity extends AppCompatActivity {
         mSchoolNameList = findViewById(R.id.school_name_dropdown);
         mDepartmentNameList = findViewById(R.id.dep_name_dropdown);
         mGenderList = findViewById(R.id.gender_list_dropdwon);
+
+        mPresentAddressExpandableView = findViewById(R.id.expandable_present_address);
+        mPresentAddressCardview = findViewById(R.id.present_address_cardview);
+
+        mPermanentAddressExpandableView = findViewById(R.id.expandable_permanent_address);
+        mPermanentAddressCardview = findViewById(R.id.permanent_address_cardview);
 
         String[] schoolNameList = getResources().getStringArray(R.array.school_name);
 
@@ -59,5 +77,34 @@ public class SecondActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void expandPresentAddress(View view) {
+        if (mPresentAddressExpandableView.getVisibility()==View.GONE){
+
+            TransitionManager.beginDelayedTransition(mPresentAddressCardview, new AutoTransition());
+            mPresentAddressExpandableView.setVisibility(View.VISIBLE);
+        }
+        else {
+            TransitionManager.beginDelayedTransition(mPresentAddressCardview, new AutoTransition());
+            mPresentAddressExpandableView.setVisibility(View.GONE);
+        }
+    }
+
+    public void save(View view) {
+        Toast toast = Toast.makeText(this,R.string.toast_message,Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void expandPermanentAddress(View view) {
+        if (mPermanentAddressExpandableView.getVisibility()==View.GONE){
+
+            TransitionManager.beginDelayedTransition(mPermanentAddressCardview, new AutoTransition());
+            mPermanentAddressExpandableView.setVisibility(View.VISIBLE);
+        }
+        else {
+            TransitionManager.beginDelayedTransition(mPermanentAddressCardview, new AutoTransition());
+            mPermanentAddressExpandableView.setVisibility(View.GONE);
+        }
     }
 }

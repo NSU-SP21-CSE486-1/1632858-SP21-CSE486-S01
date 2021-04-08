@@ -20,4 +20,14 @@
     <string name="select_date_of_birth">Your date of birth</string>
     <string name="your_nid_number">Your nid number</string>
     <string name="gender">Gender</string>
+    <string name="your_present_address">Your present address</string>
+    <string name="per_country">Country</string>
+    <string name="per_district">District</string>
+    <string name="per_post_office">Post Office</string>
+    <string name="per_police_station">Police Station</string>
+    <string name="per_postalCode">Postal Code</string>
+    <string name="per_house">House/Village/City</string>
+    <string name="per_road">Road/Block/Sector</string>
+    <string name="your_permanent_address">Your permanent address</string>
+    <string name="save">Save</string>
 </resources>

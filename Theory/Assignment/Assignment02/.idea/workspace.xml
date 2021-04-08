@@ -25,7 +25,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +85,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_XL_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-06T20:35:12.331Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-08T07:50:51.615Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/DropDown" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-561225796">
@@ -191,18 +204,18 @@
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
     <state x="573" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617693568857" />
-    <state x="807" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog" timestamp="1617811927470">
+    <state x="807" y="345" width="356" height="430" key="AndroidCreateXmlResourceDialog" timestamp="1617873395652">
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
-    <state x="807" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617811927470" />
+    <state x="807" y="345" width="356" height="430" key="AndroidCreateXmlResourceDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617873395652" />
     <state x="650" y="311" key="Downloadable.Font.Dialog.Size" timestamp="1617569127017">
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
     <state x="650" y="311" key="Downloadable.Font.Dialog.Size/61.27.1859.1053@61.27.1859.1053" timestamp="1617569127017" />
-    <state x="773" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1617716371861">
+    <state x="773" y="311" width="472" height="491" key="FileChooserDialogImpl" timestamp="1617868708539">
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
-    <state x="773" y="311" width="424" height="491" key="FileChooserDialogImpl/61.27.1859.1053@61.27.1859.1053" timestamp="1617716371861" />
+    <state x="773" y="311" width="472" height="491" key="FileChooserDialogImpl/61.27.1859.1053@61.27.1859.1053" timestamp="1617868708539" />
     <state width="1813" height="275" key="GridCell.Tab.0.bottom" timestamp="1617742616040">
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
