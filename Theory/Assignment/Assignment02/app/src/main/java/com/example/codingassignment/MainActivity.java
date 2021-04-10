@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicknext(View view) {
         Intent intent = new Intent(this,SecondActivity.class);
-            startActivity(intent);
+        startActivity(intent);
 //        String id = mid.getText().toString();
 //        if(id.length() == 7) {
 //            Intent intent = new Intent(this,SecondActivity.class);
