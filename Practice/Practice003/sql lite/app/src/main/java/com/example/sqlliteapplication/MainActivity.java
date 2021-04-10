@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     EditText mAge;
     Switch mActive;
     ListView mListview;
+    ArrayAdapter customerAdapter;
+    DatabaseHelper databaseHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +64,18 @@ public class MainActivity extends AppCompatActivity {
         btn_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "View Button", Toast.LENGTH_SHORT).show();
+                DatabaseHelper databaseHelper = new DatabaseHelper(MainActivity.this);
+                List<CustomerModel> everyone = databaseHelper.getEveryone();
+
+                customerAdapter = new ArrayAdapter<CustomerModel>(MainActivity.this, android.R.layout.simple_list_item_1, everyone);
+                mListview.setAdapter(customerAdapter);
+
+
+
+
+
+
+//                Toast.makeText(MainActivity.this, everyone.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
