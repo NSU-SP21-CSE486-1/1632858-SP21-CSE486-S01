@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SqlLiteMultipleActivity</string>
+    <string name="full_name">Your full name</string>
+    <string name="address">Adress</string>
+    <string name="next">Next</string>
+    <string name="gender">Gender</string>
+    <string name="textview">TextView</string>
+    <string name="save">Save</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="select_date">Date of Birth</string>
+    <string name="view_all">View All</string>
+</resources>

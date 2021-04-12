@@ -25,55 +25,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/androidTest/java/com/example/sqlliteapplication/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/java/com/example/sqlliteapplication/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/app/src/test/java/com/example/sqlliteapplication/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/sql lite/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/java/com/example/sqllitemultipleactivity/SecondActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/layout/dropdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/values/array.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[33220fdb]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -117,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/DropDown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-561225796">
