@@ -66,8 +66,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do{
-                String studentName = cursor.getString(2);
-                StudentModel newStudent = new StudentModel(studentName);
+                int id = cursor.getInt(0);
+                String studentName = cursor.getString(1);
+                String studentAddress = cursor.getString(2);
+                String studentGender = cursor.getString(3);
+                int studentNumber = cursor.getInt(4);
+                String date_of_birth = cursor.getString(5);
+                StudentModel newStudent = new StudentModel(id, studentName, studentAddress, studentGender, studentNumber, date_of_birth);
                 returnList.add(newStudent);
             }while(cursor.moveToNext());
         }

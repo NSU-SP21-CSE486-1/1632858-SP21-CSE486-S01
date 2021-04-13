@@ -47,15 +47,18 @@ public class SecondActivity extends AppCompatActivity {
         StudentModel studentModel;
         try{
             studentModel = new StudentModel(-1, mName, mAddress ,mgenderList.getText().toString(),Integer.parseInt(mNumber.getText().toString()),mDate.getText().toString());
-            Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
+//            Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
 
         }
         catch (Exception e){
             studentModel = new StudentModel( -1,"error","Error","Error",0,"Error");
-            Toast.makeText(SecondActivity.this, "Error", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(SecondActivity.this, "Error", Toast.LENGTH_SHORT).show();
         }
 
         DatabaseHelper databaseHelper = new DatabaseHelper(SecondActivity.this);
         databaseHelper.addStudent(studentModel);
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
