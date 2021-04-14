@@ -25,11 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/java/com/example/sqllitemultipleactivity/SecondActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/layout/activity_second.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/layout/dropdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Practice/Practice003/SqlLiteMultipleActivity/app/src/main/res/values/array.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

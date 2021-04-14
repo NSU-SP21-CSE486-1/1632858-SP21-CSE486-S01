@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
@@ -11,11 +12,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import static android.R.layout.simple_list_item_1;
 
 public class SecondActivity extends AppCompatActivity {
+
+    private String mFullName;
+    private String mNsuID;
+    private String mNsuMail;
+    private String mPhoneNumber;
+    private String mPassword;
+
+
     private AutoCompleteTextView mSchoolNameList;
     private AutoCompleteTextView mDepartmentNameList;
     private AutoCompleteTextView mGenderList;
@@ -31,15 +41,15 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        mSchoolNameList = findViewById(R.id.school_name_dropdown);
-        mDepartmentNameList = findViewById(R.id.dep_name_dropdown);
-        mGenderList = findViewById(R.id.gender_list_dropdwon);
+        mSchoolNameList = findViewById(R.id.schoolName_dropdown);
+        mDepartmentNameList = findViewById(R.id.depName_dropdown);
+        mGenderList = findViewById(R.id.gender_dropdown);
 
         mPresentAddressExpandableView = findViewById(R.id.expandable_present_address);
-        mPresentAddressCardview = findViewById(R.id.present_address_cardview);
+        mPresentAddressCardview = findViewById(R.id.presentAddress_expandableMenu);
 
         mPermanentAddressExpandableView = findViewById(R.id.expandable_permanent_address);
-        mPermanentAddressCardview = findViewById(R.id.permanent_address_cardview);
+        mPermanentAddressCardview = findViewById(R.id.permanentAddress_expandableMenu);
 
         String[] schoolNameList = getResources().getStringArray(R.array.school_name);
 
@@ -73,6 +83,16 @@ public class SecondActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        
+        Intent intent = getIntent();
+
+        mFullName = intent.getStringExtra(MainActivity.USER_FULLNAME);
+        mNsuID = intent.getStringExtra(MainActivity.USER_NSUID);
+        mNsuMail = intent.getStringExtra(MainActivity.USER_NSUMAIL);
+        mPhoneNumber = intent.getStringExtra(MainActivity.USER_PHONENUMBER);
+        mPassword = intent.getStringExtra(MainActivity.USER_PASSWORD);
 
 
 
