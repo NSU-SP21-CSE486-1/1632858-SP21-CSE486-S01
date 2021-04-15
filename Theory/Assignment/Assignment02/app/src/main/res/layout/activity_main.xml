@@ -61,7 +61,7 @@
         android:background="@drawable/round_border"
         android:ems="10"
         android:hint="@string/enter_your_7_digit_nsu_id"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:padding="15dp"
         android:textColor="#4C4C4C"
         android:textColorHint="#878686"
