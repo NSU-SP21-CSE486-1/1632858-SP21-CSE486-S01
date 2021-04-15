@@ -85,7 +85,7 @@ public class SecondActivity extends AppCompatActivity {
         });
 
 
-        
+
         Intent intent = getIntent();
 
         mFullName = intent.getStringExtra(MainActivity.USER_FULLNAME);
