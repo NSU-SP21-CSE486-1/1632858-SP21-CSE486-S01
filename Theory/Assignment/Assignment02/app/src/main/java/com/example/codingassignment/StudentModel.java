@@ -20,9 +20,7 @@ public class StudentModel {
     String presentAddress;
     String permanentAddress;
 
-
-    public StudentModel(int id, String fullname, int nsuID, String nsuMail, int phoneNumber, String password, String schoolName, String departmentName, String dateOfBirth, int nid, String gender, String presentAddress, String permanentAddress) {
-        this.id = id;
+    public StudentModel(String fullname, int nsuID, String nsuMail, int phoneNumber, String password, String schoolName, String departmentName, String dateOfBirth, int nid, String gender, String presentAddress, String permanentAddress) {
         this.fullname = fullname;
         this.nsuID = nsuID;
         this.nsuMail = nsuMail;
@@ -35,9 +33,6 @@ public class StudentModel {
         this.gender = gender;
         this.presentAddress = presentAddress;
         this.permanentAddress = permanentAddress;
-    }
-
-    public StudentModel() {
     }
 
     @Override
