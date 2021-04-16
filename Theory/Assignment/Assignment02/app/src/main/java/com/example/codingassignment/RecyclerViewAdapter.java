@@ -1,6 +1,9 @@
 package com.example.codingassignment;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +35,25 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.sNsuID.setText(String.valueOf(getAllStudentInfo.get(position).getNsuID()));
+
+        Dialog myDialog = new Dialog(context);
+        myDialog.setContentView(R.layout.popup_screen);
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
+
+        holder.sNsuID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView dialog_Name = myDialog.findViewById(R.id.show_Name);
+                TextView dialog_depName = myDialog.findViewById(R.id.show_dep);
+
+                dialog_Name.setText(getAllStudentInfo.get(holder.getAdapterPosition()).getFullname());
+                dialog_depName.setText(String.valueOf(getAllStudentInfo.get(holder.getAdapterPosition()).getDepartmentName()));
+
+                myDialog.show();
+            }
+        });
     }
 
     @Override
