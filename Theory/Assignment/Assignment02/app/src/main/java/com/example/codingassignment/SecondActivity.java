@@ -3,6 +3,7 @@ package com.example.codingassignment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -201,6 +202,11 @@ public class SecondActivity extends AppCompatActivity {
         try{
             studentModel = new StudentModel(-1, fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
             Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
+
+            DataBaseHelper dataBaseHelper = Room.databaseBuilder(SecondActivity.this,DataBaseHelper.class,"StudentInfodb").allowMainThreadQueries().build();
+
+            dataBaseHelper.daoQuery().insert(studentModel);
+
         }
         catch (Exception e){
             Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();

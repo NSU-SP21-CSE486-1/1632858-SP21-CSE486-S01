@@ -1,6 +1,11 @@
 package com.example.codingassignment;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class StudentModel {
+    @PrimaryKey (autoGenerate = true)
     int id;
     String fullname;
     int nsuID;

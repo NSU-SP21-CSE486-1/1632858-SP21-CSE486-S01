@@ -69,4 +69,9 @@ public class MainActivity extends AppCompatActivity {
 //            mid.setError("This is not your nsu id");
 //        }
     }
+
+    public void getSearch(View view) {
+        Intent intent = new Intent(this,ViewAllStudents.class);
+        startActivity(intent);
+    }
 }
