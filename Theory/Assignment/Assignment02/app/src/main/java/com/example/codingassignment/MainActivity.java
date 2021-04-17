@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         String passwordString = uPassword.getText().toString();
         String confPasswordString = uConfPassword.getText().toString();
 
+//        int first_digit = Integer.parseInt(phoneNumberString.substring(0,1));
+        
+//        char second_digit = phoneNumberString.charAt(1);
+        
         if(nsuIDString.length() != 7){
             uNsuID.setError(getString(R.string.nsu_id_error_message));
             allowNext = false;
@@ -67,9 +71,13 @@ public class MainActivity extends AppCompatActivity {
             uPhoneNumber.setError(getString(R.string.phone_number_error_message));
             allowNext = false;
         }
+//        else if(first_digit != 0){
+//            uPhoneNumber.setError("The number is not valid");
+//        }
 
 
-        if(passwordString == " "){
+
+        if(passwordString.length() == 0){
             uPassword.setError(getString(R.string.empty_password_error_message));
         }
 
