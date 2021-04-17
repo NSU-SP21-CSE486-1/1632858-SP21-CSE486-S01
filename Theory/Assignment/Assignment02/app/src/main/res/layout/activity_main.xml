@@ -12,42 +12,44 @@
         android:background="#F5F5F5"
         tools:context=".SecondActivity">
 
-    <ImageButton
-        android:id="@+id/languageChange_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:onClick="changeLanguage"
-        android:src="@drawable/ic_baseline_language_24"
-        app:backgroundTint="#5A6E7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/languageChange_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:onClick="changeLanguage"
+            android:src="@drawable/ic_baseline_language_24"
+            app:backgroundTint="#f5F5F5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/register_title_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/welcome_onboard"
-        android:textColor="#5A6E7E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/languageChange_btn" />
+        <TextView
+            android:id="@+id/register_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hind_siliguri_semibold"
+            android:text="@string/welcome_onboard"
+            android:textColor="#5A6E7E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageChange_btn" />
 
-    <TextView
-        android:id="@+id/tagline_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="@string/let_s_help_you_find_your_dream_job"
-        android:textColor="#5A6E7E"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_title_1" />
+        <TextView
+            android:id="@+id/tagline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/hind_siliguri"
+            android:text="@string/let_s_help_you_find_your_dream_job"
+            android:textColor="#5A6E7E"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_title_1" />
 
     <ImageButton
         android:id="@+id/viewAll_btn"
@@ -176,26 +178,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_edittext" />
 
-    <Button
-        android:id="@+id/next_btn"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="70dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:onClick="clickNext"
-        android:text="@string/next"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:backgroundTint="#5A6E7E"
-        app:cornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordConfrim_edittext" />
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="clickNext"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#5A6E7E"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordConfrim_edittext" />
 
     <TextView
         android:id="@+id/AlreadyAccountText"
@@ -211,21 +213,21 @@
         app:layout_constraintTop_toBottomOf="@+id/next_btn"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/log_in"
-        android:textColor="#5A6E7E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/AlreadyAccountText"
-        app:layout_constraintTop_toBottomOf="@+id/next_btn"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/hind_siliguri_semibold"
+            android:text="@string/log_in"
+            android:textColor="#5A6E7E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/AlreadyAccountText"
+            app:layout_constraintTop_toBottomOf="@+id/next_btn"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
