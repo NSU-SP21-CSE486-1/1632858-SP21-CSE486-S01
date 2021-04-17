@@ -62,10 +62,10 @@
         app:backgroundTint="#5A6E7E"
         app:layout_constraintBottom_toTopOf="@+id/fullName_edittext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="0.939"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/languageChange_btn"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <EditText
         android:id="@+id/fullName_edittext"
@@ -211,21 +211,21 @@
         app:layout_constraintTop_toBottomOf="@+id/next_btn"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/log_in"
-        android:textColor="#5A6E7E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/AlreadyAccountText"
-        app:layout_constraintTop_toBottomOf="@+id/next_btn"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/log_in"
+            android:textColor="#5A6E7E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/AlreadyAccountText"
+            app:layout_constraintTop_toBottomOf="@+id/next_btn"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

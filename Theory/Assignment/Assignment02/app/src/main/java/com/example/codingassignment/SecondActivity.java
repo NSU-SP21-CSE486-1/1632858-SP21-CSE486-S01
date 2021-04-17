@@ -201,10 +201,13 @@ public class SecondActivity extends AppCompatActivity {
         StudentModel studentModel;
         try{
             studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
-            Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
+//            Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
             DataBaseHelper dataBaseHelper = Room.databaseBuilder(SecondActivity.this,DataBaseHelper.class,"StudentInfodb").allowMainThreadQueries().build();
 
             dataBaseHelper.daoQuery().insert(studentModel);
+
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
         catch (Exception e){
             Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();

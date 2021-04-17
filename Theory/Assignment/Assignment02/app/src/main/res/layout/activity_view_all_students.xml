@@ -15,7 +15,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Search Students"
+        android:text="@string/search_students"
         android:textColor="#5A6E7E"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
