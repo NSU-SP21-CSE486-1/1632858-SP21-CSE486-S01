@@ -208,7 +208,7 @@ public class SecondActivity extends AppCompatActivity {
 
         if (allowSave) {
             try {
-                studentModel = new StudentModel(fullName, Integer.parseInt(nsuID), nsuMail, Integer.parseInt(phoneNumber), password, schoolName, departmentName, dob, Integer.parseInt(NID), gender, presentAddress, permanentAddress);
+                studentModel = new StudentModel(fullName, Integer.parseInt(nsuID), nsuMail, Integer.parseInt(phoneNumber), password, schoolName, departmentName, dob, NID, gender, presentAddress, permanentAddress);
                 DataBaseHelper dataBaseHelper = Room.databaseBuilder(SecondActivity.this, DataBaseHelper.class, "StudentInfodb").allowMainThreadQueries().build();
 
                 dataBaseHelper.daoQuery().insert(studentModel);

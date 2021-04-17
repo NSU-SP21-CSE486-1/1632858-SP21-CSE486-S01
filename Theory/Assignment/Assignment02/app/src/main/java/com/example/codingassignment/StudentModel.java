@@ -15,12 +15,12 @@ public class StudentModel {
     String schoolName;
     String departmentName;
     String dateOfBirth;
-    int nid;
+    String  nid;
     String gender;
     String presentAddress;
     String permanentAddress;
 
-    public StudentModel(String fullname, int nsuID, String nsuMail, int phoneNumber, String password, String schoolName, String departmentName, String dateOfBirth, int nid, String gender, String presentAddress, String permanentAddress) {
+    public StudentModel(String fullname, int nsuID, String nsuMail, int phoneNumber, String password, String schoolName, String departmentName, String dateOfBirth, String nid, String gender, String presentAddress, String permanentAddress) {
         this.fullname = fullname;
         this.nsuID = nsuID;
         this.nsuMail = nsuMail;
@@ -35,23 +35,7 @@ public class StudentModel {
         this.permanentAddress = permanentAddress;
     }
 
-    @Override
-    public String toString() {
-        return "StudentModel{" +
-                "id=" + id +
-                ", fullname='" + fullname + '\'' +
-                ", nsuID=" + nsuID +
-                ", nsuMail='" + nsuMail + '\'' +
-                ", phoneNumber=" + phoneNumber +
-                ", password='" + password + '\'' +
-                ", schoolName='" + schoolName + '\'' +
-                ", departmentName='" + departmentName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", nid=" + nid +
-                ", gender='" + gender + '\'' +
-                ", presentAddress='" + presentAddress + '\'' +
-                ", permanentAddress='" + permanentAddress + '\'' +
-                '}';
+    public StudentModel() {
     }
 
     public int getId() {
@@ -126,11 +110,11 @@ public class StudentModel {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public int getNid() {
+    public String getNid() {
         return nid;
     }
 
-    public void setNid(int nid) {
+    public void setNid(String nid) {
         this.nid = nid;
     }
 
