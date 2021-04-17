@@ -503,7 +503,7 @@
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="70dp"
             android:fontFamily="@font/poppins_semibold"
-            android:onClick="save"
+            android:onClick="onClickSave"
             android:text="@string/save"
             android:textColor="#FFFFFF"
             android:textSize="24sp"

@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void clickNext(View view) {
-
+    public void onClickNext(View view) {
+        boolean allowNext = true;
         String fullNameString = uFullName.getText().toString();
         String nsuIDString = uNsuID.getText().toString();
         String nsuMailString  = uNsuMail.getText().toString();
@@ -59,25 +59,40 @@ public class MainActivity extends AppCompatActivity {
         String passwordString = uPassword.getText().toString();
         String confPasswordString = uConfPassword.getText().toString();
 
-        Intent intent = new Intent(this,SecondActivity.class);
+        if(nsuIDString.length() != 7){
+            uNsuID.setError(getString(R.string.nsu_id_error_message));
+            allowNext = false;
+        }
+        if(phoneNumberString.length() != 11){
+            uPhoneNumber.setError(getString(R.string.phone_number_error_message));
+            allowNext = false;
+        }
 
-        intent.putExtra(USER_FULLNAME, fullNameString);
-        intent.putExtra(USER_NSUID, nsuIDString);
-        intent.putExtra(USER_NSUMAIL, nsuMailString);
-        intent.putExtra(USER_PHONENUMBER, phoneNumberString);
-        intent.putExtra(USER_PASSWORD, passwordString);
 
-        startActivity(intent);
+        if(passwordString == " "){
+            uPassword.setError(getString(R.string.empty_password_error_message));
+        }
 
+        if(passwordString.equals(confPasswordString)){
 
-//        String id = mid.getText().toString();
-//        if(id.length() == 7) {
-//            Intent intent = new Intent(this,SecondActivity.class);
-//            startActivity(intent);
-//        }
-//        else{
-//            mid.setError("This is not your nsu id");
-//        }
+        }
+        else{
+            uConfPassword.setError(getString(R.string.cofirm_password_error_message));
+            allowNext = false;
+        }
+
+        if(allowNext) {
+            Intent intent = new Intent(this, SecondActivity.class);
+
+            intent.putExtra(USER_FULLNAME, fullNameString);
+            intent.putExtra(USER_NSUID, nsuIDString);
+            intent.putExtra(USER_NSUMAIL, nsuMailString);
+            intent.putExtra(USER_PHONENUMBER, phoneNumberString);
+            intent.putExtra(USER_PASSWORD, passwordString);
+
+            startActivity(intent);
+        }
+
     }
 
     public void getSearch(View view) {
@@ -128,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadLocale(){
         SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
-        String language = prefs.getString("My_Language","0");
+        String language = prefs.getString("My_Language","");
         setLocale(language);
     }
 }

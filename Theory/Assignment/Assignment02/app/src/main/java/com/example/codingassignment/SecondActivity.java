@@ -159,11 +159,11 @@ public class SecondActivity extends AppCompatActivity {
         }
     }
 
-    public void save(View view) {
+    public void onClickSave(View view) {
         String schoolName = uSchoolName.getText().toString();
         String departmentName = uDepName.getText().toString();
         String dob = uDateOfBirth.getText().toString();
-        int NID = Integer.parseInt(uNIDNumber.getText().toString());
+        String NID = uNIDNumber.getText().toString();
         String gender = uGender.getText().toString();
 
         String presentCountry = uPresentCountry.getText().toString();
@@ -199,18 +199,26 @@ public class SecondActivity extends AppCompatActivity {
                 ", Country: " + permanentCountry;
 
         StudentModel studentModel;
-        try{
-            studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
-//            Toast.makeText(SecondActivity.this, studentModel.toString(), Toast.LENGTH_LONG).show();
-            DataBaseHelper dataBaseHelper = Room.databaseBuilder(SecondActivity.this,DataBaseHelper.class,"StudentInfodb").allowMainThreadQueries().build();
+        boolean allowSave = true;
 
-            dataBaseHelper.daoQuery().insert(studentModel);
-
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+        if(NID.length() !=10){
+            uNIDNumber.setError(getString(R.string.nid_number_error_message));
+            allowSave = false;
         }
-        catch (Exception e){
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
+        if (allowSave) {
+            try {
+                studentModel = new StudentModel(fullName, Integer.parseInt(nsuID), nsuMail, Integer.parseInt(phoneNumber), password, schoolName, departmentName, dob, Integer.parseInt(NID), gender, presentAddress, permanentAddress);
+                DataBaseHelper dataBaseHelper = Room.databaseBuilder(SecondActivity.this, DataBaseHelper.class, "StudentInfodb").allowMainThreadQueries().build();
+
+                dataBaseHelper.daoQuery().insert(studentModel);
+
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+
+            } catch (Exception e) {
+                Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+            }
         }
 
 

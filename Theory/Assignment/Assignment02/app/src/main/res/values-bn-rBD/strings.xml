@@ -2,11 +2,11 @@
 <resources>
     <string name="app_name">CodingAssignment</string>
     <string name="welcome_onboard">স্বাগত জানাই!</string>
-    <string name="let_s_help_you_find_your_dream_job">আসুন আপনাকে আপনার স্বপ্নের কাজটি সন্ধান করতে সহায়তা করি</string>
+    <string name="let_s_help_you_find_your_dream_job">আসুন আপনাকে আপনার স্বপ্নের চাকুরীটি সন্ধান করতে সহায়তা করি</string>
     <string name="enter_your_full_name">আপনার পুরো নাম লিখুন</string>
-    <string name="enter_your_7_digit_nsu_id">আপনার 7 ডিজিটের এনএসইউ আইডি লিখুন</string>
+    <string name="enter_your_7_digit_nsu_id">আপনার ৭ ডিজিটের এনএসইউ আইডি লিখুন</string>
     <string name="next">পরবর্তী</string>
-    <string name="log_in">প্রবেশ করুন</string>
+    <string name="log_in"> লগ ইন</string>
     <string name="already_havean_account">ইতিমধ্যে একটি সদস্যপদ আছে?</string>
     <string name="enter_your_nsu_e_mail">আপনার এনএসইউ ই-মেইল লিখুন</string>
     <string name="enter_your_phone_number">আপনার ফোন নম্বর লিখুন</string>
@@ -33,4 +33,9 @@
     <string name="save">সংরক্ষণ</string>
     <string name="search_here">এখানে অনুসন্ধান করুন</string>
     <string name="search_students">এখানে ছাত্রদের অনুসন্ধান করুন</string>
+    <string name="nsu_id_error_message">আপনার এনএসইউ আইডির প্রথম ৭ টি সংখ্যা রাখা উচিত</string>
+    <string name="phone_number_error_message">আপনার ফোন নম্বরটি ১১ ডিজিটের হওয়া উচিত</string>
+    <string name="cofirm_password_error_message">পাসওয়ার্ড মিলছে না</string>
+    <string name="empty_password_error_message">পাসওয়ার্ড খালি থাকতে পারে না</string>
+    <string name="nid_number_error_message">আপনার জাতীয় পরিচয় নম্বর  সংখ্যা হওয়া উচিত</string>
 </resources>

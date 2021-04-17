@@ -29,8 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/hind_siliguri.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/hind_siliguri_semibold.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search_bg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -43,16 +42,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_credit_card_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_credit_card_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_department_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_department_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_language_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_language_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/popup_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/popup_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/codingassignment/SecondActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_all_students.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_all_students.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-bn-rBD/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-bn-rBD/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +78,8 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
         <option value="valueResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -107,6 +102,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-view/home/batman/Android/Sdk/sources/android-30/android/widget/EditText.java_SELECTED" value="EditText" />
+    <property name="android.recentlyUsedThemes" value="Theme.AppCompat.Light.DarkActionBar" />
     <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/MultipleLanguage" />
     <property name="multi-representation-preview/home/batman/Android/Sdk/sources/android-30/android/widget/EditText.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -244,16 +240,20 @@
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
     <state x="573" y="311" width="824" height="491" key="AndroidCreateResourceDirectoryDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617693636587" />
-    <state x="572" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog" timestamp="1618608031826">
+    <state x="572" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog" timestamp="1618657110138">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
-    <state x="572" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog/59.25.1861.1055@59.25.1861.1055" timestamp="1618608031826" />
+    <state x="572" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog/59.25.1861.1055@59.25.1861.1055" timestamp="1618657110138" />
     <state x="573" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617693568857" />
-    <state x="806" y="344" width="357" height="416" key="AndroidCreateXmlResourceDialog" timestamp="1618645321960">
+    <state x="806" y="344" width="357" height="416" key="AndroidCreateXmlResourceDialog" timestamp="1618654153275">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
-    <state x="806" y="344" width="357" height="416" key="AndroidCreateXmlResourceDialog/59.25.1861.1055@59.25.1861.1055" timestamp="1618645321960" />
+    <state x="806" y="344" width="357" height="416" key="AndroidCreateXmlResourceDialog/59.25.1861.1055@59.25.1861.1055" timestamp="1618654153275" />
     <state x="807" y="345" width="356" height="430" key="AndroidCreateXmlResourceDialog/61.27.1859.1053@61.27.1859.1053" timestamp="1617873395652" />
+    <state x="572" y="260" width="824" height="584" key="AndroidThemeDialog" timestamp="1618656964522">
+      <screen x="59" y="25" width="1861" height="1055" />
+    </state>
+    <state x="572" y="260" width="824" height="584" key="AndroidThemeDialog/59.25.1861.1055@59.25.1861.1055" timestamp="1618656964522" />
     <state x="649" y="309" width="671" height="484" key="Downloadable.Font.Dialog.Size" timestamp="1618648481100">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
