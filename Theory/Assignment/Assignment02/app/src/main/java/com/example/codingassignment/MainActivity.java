@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(passwordString.length() == 0){
             uPassword.setError(getString(R.string.empty_password_error_message));
+            allowNext = false;
         }
 
         if(passwordString.equals(confPasswordString)){
@@ -103,8 +104,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void getSearch(View view) {
-        Intent intent = new Intent(this,ViewAllStudents.class);
+        Intent intent = new Intent(this,SearchAllStudents.class);
         startActivity(intent);
     }
 
@@ -153,5 +155,10 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
         String language = prefs.getString("My_Language","");
         setLocale(language);
+    }
+
+    public void viewAllStudents(View view) {
+        Intent intent = new Intent(this, ViewAllStudents.class);
+        startActivity(intent);
     }
 }

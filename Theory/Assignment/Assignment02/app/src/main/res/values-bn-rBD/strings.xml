@@ -38,4 +38,5 @@
     <string name="cofirm_password_error_message">পাসওয়ার্ড মিলছে না</string>
     <string name="empty_password_error_message">পাসওয়ার্ড খালি থাকতে পারে না</string>
     <string name="nid_number_error_message">আপনার জাতীয় পরিচয় নম্বর ১০ সংখ্যা হওয়া উচিত</string>
+    <string name="view_all_students">সকল ছাত্রের তালিকা</string>
 </resources>

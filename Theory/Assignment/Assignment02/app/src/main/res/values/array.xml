@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="school_name_list">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+
+
+    <string-array name="nsu_school_name">
+        <item>School of Business and Economics</item>
+        <item>School of Engineering and Physical Sciences</item>
+        <item>School of Humanities and Social Sciences</item>
+        <item>School of Health and Life Sciences</item>
     </string-array>
 
-    <string-array name="school_name">
-        <item>SchoolName1</item>
-        <item>SchoolName2</item>
-        <item>SchoolName3</item>
+    <string-array name="SBE_depName">
+        <item>Department of Accounting and Finance</item>
+        <item>Department of Economics</item>
+        <item>Department of Management</item>
+        <item>Department of Marketing and International Business</item>
     </string-array>
 
-    <string-array name="depName_1">
-        <item>Department1</item>
-        <item>Department2</item>
-        <item>Department3</item>
+    <string-array name="SEPS_depName">
+        <item>Department of Architecture</item>
+        <item>Department of Civil and Environmental Engineering</item>
+        <item>Department of Electrical and Computer Engineering</item>
     </string-array>
 
-    <string-array name="depName_2">
-        <item>Department4</item>
-        <item>Department5</item>
-        <item>Department6</item>
+    <string-array name="SHS_depName">
+        <item>Department of English and Modern Languages</item>
+        <item>Department of History and Philosophy</item>
+        <item>Department of Law</item>
+        <item>Department of Political Science and Sociology</item>
     </string-array>
 
-    <string-array name="depName_3">
-        <item>Department7</item>
-        <item>Department8</item>
-        <item>Department9</item>
+    <string-array name="SHLS_depName">
+        <item>Department of Biochemistry and Microbiology</item>
+        <item>Department of Environmental Science and Management</item>
+        <item>Department of Pharmaceutical Sciences</item>
+        <item>Department of Public Health</item>
     </string-array>
 
     <string-array name="gender_list">

@@ -88,19 +88,22 @@ public class SecondActivity extends AppCompatActivity {
         mPermanentAddressExpandableView = findViewById(R.id.expandable_permanent_address);
         mPermanentAddressCardview = findViewById(R.id.permanentAddress_expandableMenu);
 
-        String[] schoolNameList = getResources().getStringArray(R.array.school_name);
+        String[] schoolNameList = getResources().getStringArray(R.array.nsu_school_name);
 
-        String[] depName1List = getResources().getStringArray(R.array.depName_1);
-        String[] depName2List = getResources().getStringArray(R.array.depName_2);
-        String[] depName3List = getResources().getStringArray(R.array.depName_3);
+        String[] SBE_depName = getResources().getStringArray(R.array.SBE_depName);
+        String[] SEPS_depName = getResources().getStringArray(R.array.SEPS_depName);
+        String[] SHS_depName = getResources().getStringArray(R.array.SHS_depName);
+        String[] SHLS_depName = getResources().getStringArray(R.array.SHLS_depName);
+
 
         String[] genderList = getResources().getStringArray(R.array.gender_list);
 
         ArrayAdapter schoolNameAdapter = new ArrayAdapter(this, simple_list_item_1, schoolNameList);
 
-        ArrayAdapter depName1Adapter = new ArrayAdapter(this, simple_list_item_1, depName1List);
-        ArrayAdapter depName2Adapter = new ArrayAdapter(this, simple_list_item_1, depName2List);
-        ArrayAdapter depName3Adapter = new ArrayAdapter(this, simple_list_item_1, depName3List);
+        ArrayAdapter SBEadapter= new ArrayAdapter(this, simple_list_item_1, SBE_depName);
+        ArrayAdapter SEPSadapter = new ArrayAdapter(this, simple_list_item_1, SEPS_depName);
+        ArrayAdapter SHSadapter = new ArrayAdapter(this, simple_list_item_1, SHS_depName);
+        ArrayAdapter SHLSadapter = new ArrayAdapter(this, simple_list_item_1, SHLS_depName);
 
         ArrayAdapter genderAdapter = new ArrayAdapter(this, simple_list_item_1, genderList);
 
@@ -110,13 +113,16 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0){
-                    uDepName.setAdapter(depName1Adapter);
+                    uDepName.setAdapter(SBEadapter);
                 }
                 else if(position ==1){
-                    uDepName.setAdapter(depName2Adapter);
+                    uDepName.setAdapter(SEPSadapter);
+                }
+                else if(position == 2){
+                 uDepName.setAdapter(SHSadapter);
                 }
                 else{
-                    uDepName.setAdapter(depName3Adapter);
+                    uDepName.setAdapter(SHLSadapter);
                 }
             }
         });

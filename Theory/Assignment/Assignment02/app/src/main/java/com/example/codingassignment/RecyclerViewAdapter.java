@@ -53,7 +53,7 @@ public class    RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAd
                 TextView dialog_depName = myDialog.findViewById(R.id.show_dep);
 
                 dialog_Name.setText(getSearchItem.get(holder.getAdapterPosition()).getFullname());
-                dialog_depName.setText(String.valueOf(getSearchItem.get(holder.getAdapterPosition()).getDepartmentName()));
+                dialog_depName.setText(getSearchItem.get(holder.getAdapterPosition()).getDepartmentName());
 
                 myDialog.show();
             }
