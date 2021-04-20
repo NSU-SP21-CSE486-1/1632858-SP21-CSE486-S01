@@ -1,9 +1,10 @@
-package com.example.codingassignment;
+package com.example.codingassignment.room.dao;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+
+import com.example.codingassignment.model.StudentModel;
 
 import java.util.List;
 

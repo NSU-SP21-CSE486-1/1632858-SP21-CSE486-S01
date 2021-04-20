@@ -1,4 +1,4 @@
-package com.example.codingassignment;
+package com.example.codingassignment.uicontroller;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -15,6 +15,10 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.codingassignment.room.database.DataBaseHelper;
+import com.example.codingassignment.R;
+import com.example.codingassignment.model.StudentModel;
 
 import static android.R.layout.simple_list_item_1;
 

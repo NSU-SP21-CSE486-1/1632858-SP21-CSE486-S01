@@ -1,16 +1,16 @@
-package com.example.codingassignment;
+package com.example.codingassignment.uicontroller;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
-import android.app.Dialog;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.widget.EditText;
+
+import com.example.codingassignment.room.database.DataBaseHelper;
+import com.example.codingassignment.R;
+import com.example.codingassignment.adapter.RecyclerViewAdapter;
+import com.example.codingassignment.model.StudentModel;
 
 import java.util.List;
 

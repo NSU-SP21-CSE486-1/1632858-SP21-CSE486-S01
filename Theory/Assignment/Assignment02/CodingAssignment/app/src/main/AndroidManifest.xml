@@ -10,27 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingAssignment">
         <activity
-            android:name=".SearchAllStudents"
-            android:parentActivityName=".MainActivity">
+            android:name=".uicontroller.SearchAllStudents"
+            android:parentActivityName=".uicontroller.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.codingassignment.SearchAllStudents" />
+                android:value="com.example.codingassignment.uicontroller.SearchAllStudents" />
         </activity>
         <activity
-            android:name=".ViewAllStudents"
-            android:parentActivityName=".MainActivity">
+            android:name=".uicontroller.ViewAllStudents"
+            android:parentActivityName=".uicontroller.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.codingassignment.ViewAllStudents" />
+                android:value="com.example.codingassignment.uicontroller.ViewAllStudents" />
         </activity>
         <activity
-            android:name=".SecondActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".uicontroller.SecondActivity"
+            android:parentActivityName=".uicontroller.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.codingassignment.SecondActivity" />
+                android:value="com.example.codingassignment.uicontroller.SecondActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".uicontroller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

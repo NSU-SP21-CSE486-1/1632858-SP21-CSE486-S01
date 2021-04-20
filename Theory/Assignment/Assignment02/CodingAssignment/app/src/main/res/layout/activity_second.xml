@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F5F5F5"
-        tools:context=".SecondActivity">
+        tools:context=".uicontroller.SecondActivity">
 
         <TextView
             android:id="@+id/register_title_2"

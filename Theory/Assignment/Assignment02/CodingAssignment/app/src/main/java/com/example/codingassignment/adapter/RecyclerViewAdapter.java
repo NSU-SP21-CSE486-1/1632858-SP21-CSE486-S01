@@ -1,4 +1,4 @@
-package com.example.codingassignment;
+package com.example.codingassignment.adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.codingassignment.R;
+import com.example.codingassignment.model.StudentModel;
 
 import java.util.ArrayList;
 import java.util.List;

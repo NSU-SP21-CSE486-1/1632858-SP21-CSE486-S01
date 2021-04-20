@@ -1,4 +1,4 @@
-package com.example.codingassignment;
+package com.example.codingassignment.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

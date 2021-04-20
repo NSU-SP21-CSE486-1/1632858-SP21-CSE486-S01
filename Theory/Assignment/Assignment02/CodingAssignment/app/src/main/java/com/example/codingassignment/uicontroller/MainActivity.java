@@ -1,20 +1,18 @@
-package com.example.codingassignment;
+package com.example.codingassignment.uicontroller;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.motion.widget.DesignTool;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.codingassignment.R;
 
 import java.util.Locale;
 
@@ -106,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getSearch(View view) {
-        Intent intent = new Intent(this,SearchAllStudents.class);
+        Intent intent = new Intent(this, SearchAllStudents.class);
         startActivity(intent);
     }
 
