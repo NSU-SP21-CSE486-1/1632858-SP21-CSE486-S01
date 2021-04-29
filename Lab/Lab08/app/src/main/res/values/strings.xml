@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HeadsetProject</string>
+    <string name="toast_message">Headphone got plugged or unplugged</string>
+</resources>
