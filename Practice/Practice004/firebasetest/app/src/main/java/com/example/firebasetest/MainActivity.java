@@ -2,6 +2,7 @@ package com.example.firebasetest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -40,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
         mDatabaseReference.child(uKey).setValue(userModel);
 
         Toast.makeText(getApplicationContext(), "Data Saved", Toast.LENGTH_SHORT).show();
+    }
+
+    public void viewAllOnClick(View view) {
+        Intent intent = new Intent(MainActivity.this, ViewAll.class);
+        startActivity(intent);
     }
 }
