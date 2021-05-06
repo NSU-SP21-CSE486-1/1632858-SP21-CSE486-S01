@@ -83,12 +83,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-view/home/batman/Android/Sdk/sources/android-30/android/widget/EditText.java_SELECTED" value="EditText" />
     <property name="android.recentlyUsedThemes" value="Theme.AppCompat.Light.DarkActionBar" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/firebasetest" />
     <property name="multi-representation-preview/home/batman/Android/Sdk/sources/android-30/android/widget/EditText.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" />
   </component>
   <component name="RecentsManager">
@@ -248,19 +248,19 @@
     </state>
     <state x="649" y="309" width="671" height="484" key="Downloadable.Font.Dialog.Size/59.25.1861.1055@59.25.1861.1055" timestamp="1618648481100" />
     <state x="650" y="311" key="Downloadable.Font.Dialog.Size/61.27.1859.1053@61.27.1859.1053" timestamp="1617569127017" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1620285906257">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1620331961043">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.25.1861.1055@59.25.1861.1055" timestamp="1620285906257" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.25.1861.1055@59.25.1861.1055" timestamp="1620331961043" />
     <state x="773" y="311" width="472" height="491" key="FileChooserDialogImpl/61.27.1859.1053@61.27.1859.1053" timestamp="1617974498679" />
     <state width="1813" height="275" key="GridCell.Tab.0.bottom/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />
     <state width="1813" height="275" key="GridCell.Tab.0.center/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />
     <state width="1813" height="275" key="GridCell.Tab.0.left/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />
     <state width="1813" height="275" key="GridCell.Tab.0.right/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />
-    <state x="478" y="187" key="SettingsEditor" timestamp="1619034549133">
+    <state x="478" y="187" key="SettingsEditor" timestamp="1620331063705">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
-    <state x="478" y="187" key="SettingsEditor/59.25.1861.1055@59.25.1861.1055" timestamp="1619034549133" />
+    <state x="478" y="187" key="SettingsEditor/59.25.1861.1055@59.25.1861.1055" timestamp="1620331063705" />
     <state x="653" y="253" key="run.anything.popup" timestamp="1618645580408">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>

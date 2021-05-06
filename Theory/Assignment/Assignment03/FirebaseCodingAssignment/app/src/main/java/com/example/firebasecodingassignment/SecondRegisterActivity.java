@@ -240,7 +240,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
                     {
                         finish();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
                 } else {
