@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseCodingAssignment">
-        <activity android:name=".SecondRegisterActivity"></activity>
+        <activity android:name=".ViewAll"></activity>
+        <activity android:name=".SecondRegisterActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

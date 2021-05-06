@@ -1,5 +1,6 @@
 package com.example.firebasecodingassignment;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -15,6 +16,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -57,7 +63,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
     private CardView mPermanentAddressCardview;
 
     DatabaseReference mDatabaseReference;
-
+    FirebaseAuth uAuth;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,6 +147,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
         password = intent.getStringExtra(RegisterActivity.USER_PASSWORD);
 
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("StudentModel");
+        uAuth = FirebaseAuth.getInstance();
 
 
     }
@@ -225,5 +232,27 @@ public class SecondRegisterActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
+        uAuth.createUserWithEmailAndPassword(nsuMail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+
+                    {
+                        finish();
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+                } else {
+                    if (task.getException() instanceof FirebaseAuthUserCollisionException) {
+                        Toast.makeText(getApplicationContext(), "You Already Have An Account", Toast.LENGTH_SHORT).show();
+                    } else {
+
+                        Toast.makeText(getApplicationContext(), "Registration Is Not Successful" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
     }
+
 }
