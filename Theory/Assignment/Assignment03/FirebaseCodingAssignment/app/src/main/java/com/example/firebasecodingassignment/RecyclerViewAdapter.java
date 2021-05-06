@@ -41,24 +41,24 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
         StudentModel studentModel = getAllStudentInfo.get(position);
         holder.sNsuID.setText(String.valueOf(studentModel.getNsuID()));
 
-//        Dialog myDialog = new Dialog(context);
-//        myDialog.setContentView(R.layout.popup_screen);
-//        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//
-//
-//
-//        holder.sNsuID.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                TextView dialog_Name = myDialog.findViewById(R.id.show_Name);
-//                TextView dialog_depName = myDialog.findViewById(R.id.show_dep);
-//
-//                dialog_Name.setText(getSearchItem.get(holder.getAdapterPosition()).getFullname());
-//                dialog_depName.setText(getSearchItem.get(holder.getAdapterPosition()).getDepartmentName());
-//
-//                myDialog.show();
-//            }
-//        });
+        Dialog myDialog = new Dialog(context);
+        myDialog.setContentView(R.layout.popup_screen);
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
+
+        holder.sNsuID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView dialog_Name = myDialog.findViewById(R.id.show_Name);
+                TextView dialog_depName = myDialog.findViewById(R.id.show_dep);
+
+                dialog_Name.setText(getAllStudentInfo.get(holder.getAdapterPosition()).getFullname());
+                dialog_depName.setText(getAllStudentInfo.get(holder.getAdapterPosition()).getDepartmentName());
+
+                myDialog.show();
+            }
+        });
     }
 
     @Override
