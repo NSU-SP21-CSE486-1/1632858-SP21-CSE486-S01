@@ -42,6 +42,7 @@
         android:layout_marginEnd="8dp"
         android:background="#5A6E7E"
         android:padding="10dp"
+        android:onClick="onSearchClick"
         android:tint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider2"

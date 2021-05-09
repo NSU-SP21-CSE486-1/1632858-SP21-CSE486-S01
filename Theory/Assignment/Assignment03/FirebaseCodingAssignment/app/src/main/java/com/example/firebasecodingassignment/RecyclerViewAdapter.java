@@ -17,14 +17,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
-    List<StudentModel> getAllStudentInfo;
+    ArrayList<StudentModel> getAllStudentInfo;
     Context context;
-//    List<StudentModel> getSearchItem;
+    ArrayList<StudentModel> getSearchItem;
 
     public RecyclerViewAdapter(ArrayList<StudentModel> getAllStudentInfo, Context context) {
         this.getAllStudentInfo = getAllStudentInfo;
         this.context = context;
-//        this.getSearchItem = getAllStudentInfo;
+        this.getSearchItem = getAllStudentInfo;
     }
 
     @NonNull
@@ -38,7 +38,7 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        StudentModel studentModel = getAllStudentInfo.get(position);
+        StudentModel studentModel = getSearchItem.get(position);
         holder.sNsuID.setText(String.valueOf(studentModel.getNsuID()));
 
         Dialog myDialog = new Dialog(context);
@@ -53,8 +53,8 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
                 TextView dialog_Name = myDialog.findViewById(R.id.show_Name);
                 TextView dialog_depName = myDialog.findViewById(R.id.show_dep);
 
-                dialog_Name.setText(getAllStudentInfo.get(holder.getAdapterPosition()).getFullname());
-                dialog_depName.setText(getAllStudentInfo.get(holder.getAdapterPosition()).getDepartmentName());
+                dialog_Name.setText(getSearchItem.get(holder.getAdapterPosition()).getFullname());
+                dialog_depName.setText(getSearchItem.get(holder.getAdapterPosition()).getDepartmentName());
 
                 myDialog.show();
             }
@@ -63,7 +63,7 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
 
     @Override
     public int getItemCount() {
-        return getAllStudentInfo.size();
+        return getSearchItem.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder  {
@@ -75,36 +75,36 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
         }
     }
 
-//    public Filter getSearchFilter(){
-//
-//        return new Filter() {
-//            @Override
-//            protected FilterResults performFiltering(CharSequence  charSequence ) {
-//                String key = charSequence.toString();
-//                if(key.isEmpty()){
-//                    getSearchItem = getAllStudentInfo;
-//                }
-//                else{
-//                    List<StudentModel> searchInput = new ArrayList<>();
-//                    for(StudentModel row: getAllStudentInfo){
-//                        if(String.valueOf(row.getNsuID()).toLowerCase().contains(key.toLowerCase())){
-//                            searchInput.add(row);
-//                        }
-//                    }
-//                    getSearchItem = searchInput;
-//                }
-//                FilterResults searchResult = new FilterResults();
-//                searchResult.values = getSearchItem;
-//                return searchResult;
-//            }
-//
-//            @Override
-//            protected void publishResults(CharSequence charSequence, FilterResults searchResults) {
-//
-//                getSearchItem = (List<StudentModel>) searchResults.values;
-//                notifyDataSetChanged();
-//
-//            }
-//        };
-//    }
+    public Filter getSearchFilter(){
+
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence  charSequence ) {
+                String key = charSequence.toString();
+                if(key.isEmpty()){
+                    getSearchItem = getAllStudentInfo;
+                }
+                else{
+                    ArrayList<StudentModel> searchInput = new ArrayList<>();
+                    for(StudentModel row: getAllStudentInfo){
+                        if(String.valueOf(row.getNsuID()).toLowerCase().contains(key.toLowerCase())){
+                            searchInput.add(row);
+                        }
+                    }
+                    getSearchItem = searchInput;
+                }
+                FilterResults searchResult = new FilterResults();
+                searchResult.values = getSearchItem;
+                return searchResult;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults searchResults) {
+
+                getSearchItem = (ArrayList<StudentModel>) searchResults.values;
+                notifyDataSetChanged();
+
+            }
+        };
+    }
 }
