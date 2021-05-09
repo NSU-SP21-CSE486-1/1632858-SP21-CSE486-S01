@@ -38,4 +38,5 @@
     <string name="empty_password_error_message">Password cannot be empty</string>
     <string name="nid_number_error_message">Your NID Number should be 10 digit</string>
     <string name="view_all_students">All Students</string>
+    <string name="welcome">Welcome</string>
 </resources>
