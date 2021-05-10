@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -13,8 +13,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.firebasecodingassignment.R;
+import com.example.firebasecodingassignment.models.StudentModel;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
     ArrayList<StudentModel> getAllStudentInfo;

@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.uicontroller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.firebasecodingassignment.R;
 
 public class RegisterActivity extends AppCompatActivity {
     private EditText uFullName;

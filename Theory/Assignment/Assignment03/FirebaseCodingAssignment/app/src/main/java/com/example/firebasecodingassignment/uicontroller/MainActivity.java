@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.uicontroller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.firebasecodingassignment.R;
+import com.example.firebasecodingassignment.session.SessionManagement;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {

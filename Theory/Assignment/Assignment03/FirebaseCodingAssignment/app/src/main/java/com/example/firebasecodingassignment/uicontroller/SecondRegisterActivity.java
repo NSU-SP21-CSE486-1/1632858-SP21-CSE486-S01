@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.firebasecodingassignment.R;
+import com.example.firebasecodingassignment.models.StudentModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -228,7 +230,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
             StudentModel studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
             mDatabaseReference.child(uKey).setValue(studentModel);
 
-            Intent intent = new Intent(SecondRegisterActivity.this,LoginActivity.class);
+            Intent intent = new Intent(SecondRegisterActivity.this, LoginActivity.class);
             startActivity(intent);
 
         }

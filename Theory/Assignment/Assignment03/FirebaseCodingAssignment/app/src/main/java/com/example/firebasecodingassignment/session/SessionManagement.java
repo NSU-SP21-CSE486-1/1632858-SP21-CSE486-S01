@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.session;
 
 import android.content.Context;
 import android.content.SharedPreferences;

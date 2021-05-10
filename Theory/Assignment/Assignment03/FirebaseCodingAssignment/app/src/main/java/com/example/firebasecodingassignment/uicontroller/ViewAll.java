@@ -1,15 +1,17 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.EditText;
+import android.view.View;
 
+import com.example.firebasecodingassignment.R;
+import com.example.firebasecodingassignment.adapter.RecyclerViewAdapter;
+import com.example.firebasecodingassignment.models.StudentModel;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,32 +20,28 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class SearchAllStudents extends AppCompatActivity {
+public class ViewAll extends AppCompatActivity {
     private RecyclerView mListviewer;
     private RecyclerView.LayoutManager mLayoutmanager;
     RecyclerViewAdapter mAdapter;
-    EditText mSearchBar;
-    CharSequence searchItem = "";
 
-
+    private DatabaseReference uDatabaseReference;
     ArrayList<StudentModel> getAllStudentInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_all_students);
+        setContentView(R.layout.activity_view_all);
 
-        DatabaseReference uDatabaseReference = FirebaseDatabase.getInstance().getReference("StudentModel");
-
-        getAllStudentInfo = new ArrayList<>();
-
-        mListviewer = findViewById(R.id.searchAllStudents);
+        mListviewer = findViewById(R.id.viewAllStudents);
         mListviewer.setHasFixedSize(true);
         mLayoutmanager = new LinearLayoutManager(this);
         mListviewer.setLayoutManager(mLayoutmanager);
-        mSearchBar = findViewById(R.id.search_bar);
 
+        uDatabaseReference = FirebaseDatabase.getInstance().getReference("StudentModel");
 
-        mAdapter = new RecyclerViewAdapter(getAllStudentInfo, SearchAllStudents.this);
+        getAllStudentInfo = new ArrayList<>();
+
+        mAdapter = new RecyclerViewAdapter(getAllStudentInfo, this);
         mListviewer.setAdapter(mAdapter);
 
         uDatabaseReference.addValueEventListener(new ValueEventListener() {
@@ -61,25 +59,10 @@ public class SearchAllStudents extends AppCompatActivity {
 
             }
         });
+    }
 
-        mSearchBar.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-
-                mAdapter.getSearchFilter().filter(charSequence);
-                searchItem = charSequence;
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
+    public void onSearchClick(View view) {
+        Intent intent = new Intent(ViewAll.this, SearchAllStudents.class);
+        startActivity(intent);
     }
 }

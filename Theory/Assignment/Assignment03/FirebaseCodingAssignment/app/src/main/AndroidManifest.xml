@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseCodingAssignment">
-        <activity android:name=".SearchAllStudents"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".uicontroller.SearchAllStudents"></activity>
+        <activity android:name=".uicontroller.MainActivity" />
+        <activity android:name=".uicontroller.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewAll" />
-        <activity android:name=".SecondRegisterActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".uicontroller.ViewAll" />
+        <activity android:name=".uicontroller.SecondRegisterActivity" />
+        <activity android:name=".uicontroller.RegisterActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

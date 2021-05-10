@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.models;
 
 import androidx.room.PrimaryKey;
 

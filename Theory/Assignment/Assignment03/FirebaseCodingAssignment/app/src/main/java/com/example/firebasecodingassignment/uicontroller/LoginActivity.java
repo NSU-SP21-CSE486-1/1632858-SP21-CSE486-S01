@@ -1,4 +1,4 @@
-package com.example.firebasecodingassignment;
+package com.example.firebasecodingassignment.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -15,6 +15,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.firebasecodingassignment.R;
+import com.example.firebasecodingassignment.session.SessionManagement;
+import com.example.firebasecodingassignment.session.UserSession;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -106,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onRegisterClick(View view) {
-        Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
 
