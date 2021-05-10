@@ -48,5 +48,6 @@
     <string name="error_account">আপনার কোনও অ্যাকাউন্ট নেই দয়া করে প্রথমে সাইনআপ করুন</string>
     <string name="error_previous_account">আপনার ইতিমধ্যেই একটি অ্যাকাউন্ট আছে</string>
     <string name="error_registration_not_successful">নিবন্ধকরণ সফল নয়</string>
+    <string name="password_length_not_enough">পাসওয়ার্ড কমপক্ষে ৬ টি অক্ষর হওয়া উচিত</string>
 
 </resources>

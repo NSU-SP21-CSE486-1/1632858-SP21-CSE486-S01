@@ -61,6 +61,12 @@ public class RegisterActivity extends AppCompatActivity {
             allowNext = false;
         }
 
+        if(passwordString.length() <= 6){
+            uPassword.setError(getString(R.string.password_length_not_enough));
+            allowNext = false;
+        }
+
+
         if(passwordString.equals(confPasswordString)){
 
         }

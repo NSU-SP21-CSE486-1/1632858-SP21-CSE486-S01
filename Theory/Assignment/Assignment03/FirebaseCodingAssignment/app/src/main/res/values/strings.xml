@@ -47,4 +47,5 @@
     <string name="error_account">You do not have any account. Please sign up first</string>
     <string name="error_previous_account">You already have an account</string>
     <string name="error_registration_not_successful">Registration is not successful</string>
+    <string name="password_length_not_enough">Password should be atleast 6 characters</string>
 </resources>
