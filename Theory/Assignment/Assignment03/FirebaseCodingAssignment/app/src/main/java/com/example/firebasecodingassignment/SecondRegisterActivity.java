@@ -228,7 +228,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
             StudentModel studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
             mDatabaseReference.child(uKey).setValue(studentModel);
 
-            Intent intent = new Intent(SecondRegisterActivity.this,MainActivity.class);
+            Intent intent = new Intent(SecondRegisterActivity.this,LoginActivity.class);
             startActivity(intent);
 
         }
@@ -245,10 +245,10 @@ public class SecondRegisterActivity extends AppCompatActivity {
                     }
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                        Toast.makeText(getApplicationContext(), "You Already Have An Account", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), R.string.error_previous_account, Toast.LENGTH_SHORT).show();
                     } else {
 
-                        Toast.makeText(getApplicationContext(), "Registration Is Not Successful" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), getString(R.string.error_registration_not_successful) + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
             }

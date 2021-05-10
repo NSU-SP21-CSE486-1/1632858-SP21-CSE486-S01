@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:text="@string/textview"
+    android:fontFamily="@font/poppins_light"
     android:textColor="@color/black"
     android:textSize="18sp"
-    android:textStyle="bold" />
+    android:textStyle="bold"
+    android:background="#FFFFFF"/>

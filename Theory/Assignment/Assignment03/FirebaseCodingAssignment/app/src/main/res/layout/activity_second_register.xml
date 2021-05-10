@@ -19,7 +19,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="24dp"
-            android:fontFamily="@font/poppins_light"
+            android:fontFamily="@font/poppins_semibold"
             android:text="@string/lets_get_you_know_a_little_better"
             android:textColor="#5A6E7E"
             android:textSize="24sp"

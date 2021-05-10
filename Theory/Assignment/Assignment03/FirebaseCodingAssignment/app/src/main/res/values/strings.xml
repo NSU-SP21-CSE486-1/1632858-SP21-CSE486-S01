@@ -39,4 +39,12 @@
     <string name="nid_number_error_message">Your NID Number should be 10 digit</string>
     <string name="view_all_students">All Students</string>
     <string name="welcome">Welcome</string>
+    <string name="tagline_login">Let’s help you find your dream job</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don’t have an account? Register</string>
+    <string name="error_email">Please enter a valid email address</string>
+    <string name="error_account">You do not have any account. Please sign up first</string>
+    <string name="error_previous_account">You already have an account</string>
+    <string name="error_registration_not_successful">Registration is not successful</string>
 </resources>

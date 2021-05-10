@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodingAssignment</string>
+    <string name="welcome_onboard">স্বাগত জানাই!</string>
+    <string name="let_s_help_you_find_your_dream_job">আসুন আপনাকে আপনার স্বপ্নের চাকুরীটি সন্ধান করতে সহায়তা করি</string>
+    <string name="enter_your_full_name">আপনার পুরো নাম লিখুন</string>
+    <string name="enter_your_7_digit_nsu_id">আপনার ৭ ডিজিটের এনএসইউ আইডি লিখুন</string>
+    <string name="next">পরবর্তী</string>
+    <string name="log_in"> লগ ইন</string>
+    <string name="already_havean_account">ইতিমধ্যে একটি সদস্যপদ আছে?</string>
+    <string name="enter_your_nsu_e_mail">আপনার এনএসইউ ই-মেইল লিখুন</string>
+    <string name="enter_your_phone_number">আপনার ফোন নম্বর লিখুন</string>
+    <string name="enter_password">পাসওয়ার্ড লিখুন</string>
+    <string name="confirm_password">পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="toast_message">So far works</string>
+    <string name="select_date">আপনার জন্ম তারিখ নির্বাচন করুন</string>
+    <string name="lets_get_you_know_a_little_better">আসুন জেনে নেওয়া যাক একটু ভাল</string>
+    <string name="name_of_your_school">আপনার স্কুলের নাম</string>
+    <string name="textview">TextView</string>
+    <string name="name_of_your_department">আপনার বিভাগের নাম</string>
+    <string name="select_date_of_birth">আপনার জন্ম তারিখ নির্বাচন করুন</string>
+    <string name="your_nid_number">আপনার জাতীয় পরিচয়পত্রের নম্বর</string>
+    <string name="gender">লিঙ্গ</string>
+    <string name="your_present_address">আপনার বর্তমান ঠিকানা</string>
+    <string name="per_country">দেশের নাম</string>
+    <string name="per_district">জেলার নাম</string>
+    <string name="per_post_office">ডাক ঘর</string>
+    <string name="per_police_station">থানার নাম</string>
+    <string name="per_postalCode">পোস্ট অফিসের নাম্বার</string>
+    <string name="per_house">বাড়ি / গ্রাম / শহর</string>
+    <string name="per_road">রাস্তা / ব্লক / সেক্টর</string>
+    <string name="your_permanent_address">আপনার স্থায়ী ঠিকানা</string>
+    <string name="save">সংরক্ষণ</string>
+    <string name="search_here">এখানে অনুসন্ধান করুন</string>
+    <string name="search_students">এখানে ছাত্রদের অনুসন্ধান করুন</string>
+    <string name="nsu_id_error_message">আপনার এনএসইউ আইডির প্রথম ৭ টি সংখ্যা রাখা উচিত</string>
+    <string name="phone_number_error_message">আপনার ফোন নম্বরটি ১১ ডিজিটের হওয়া উচিত</string>
+    <string name="cofirm_password_error_message">পাসওয়ার্ড মিলছে না</string>
+    <string name="empty_password_error_message">পাসওয়ার্ড খালি থাকতে পারে না</string>
+    <string name="nid_number_error_message">আপনার জাতীয় পরিচয় নম্বর ১০ সংখ্যা হওয়া উচিত</string>
+    <string name="view_all_students">সকল ছাত্রের তালিকা</string>
+    <string name="welcome">স্বাগতম</string>
+    <string name="tagline_login">আসুন আপনাকে আপনার স্বপ্নের চাকুরীটি সন্ধান করতে সহায়তা করি</string>
+    <string name="forget_password">পাসওয়ার্ড ভুলে গেছেন?</string>
+    <string name="login">লগ ইন</string>
+    <string name="don_t_have_an_account_register">আপনার কোন অ্যাকাউন্ট নেই? এখানে নিবন্ধন করুন</string>
+    <string name="error_email">একটি বৈধ ইমেইল লিখুন</string>
+    <string name="error_account">আপনার কোনও অ্যাকাউন্ট নেই দয়া করে প্রথমে সাইনআপ করুন</string>
+    <string name="error_previous_account">আপনার ইতিমধ্যেই একটি অ্যাকাউন্ট আছে</string>
+    <string name="error_registration_not_successful">নিবন্ধকরণ সফল নয়</string>
+
+</resources>

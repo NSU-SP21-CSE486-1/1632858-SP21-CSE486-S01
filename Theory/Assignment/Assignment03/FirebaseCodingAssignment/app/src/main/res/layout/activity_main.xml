@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppins_bold"
         android:padding="10dp"
         android:text="@string/welcome"
         android:textColor="#5A6E7E"
