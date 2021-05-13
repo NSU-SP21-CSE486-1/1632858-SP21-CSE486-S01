@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="item_thumbnail">Item thumbnail</string>
+    <string name="price_format">Price: ৳%1d BDT</string>
+    <string name="items">Items</string>
+    <string name="done">Done</string>
+
+    <string-array name="items_names">
+        <item>Potato</item>
+        <item>Carrot</item>
+        <item>Onion</item>
+        <item>Red Tomato</item>
+        <item>Green Chili</item>
+        <item>Garlic</item>
+        <item>Cauliflower</item>
+        <item>Ginger</item>
+        <item>Pumpkin</item>
+        <item>Cucumber</item>
+    </string-array>
+    <integer-array name="items_prices" >
+        <item>25</item>
+        <item>29</item>
+        <item>39</item>
+        <item>25</item>
+        <item>17</item>
+        <item>39</item>
+        <item>45</item>
+        <item>70</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+
+    <array name="items_thumbnails">
+        <item>@drawable/potato</item>
+        <item>@drawable/carrot</item>
+        <item>@drawable/onion_thumbnail</item>
+        <item>@drawable/red_tomato_thumbnail</item>
+        <item>@drawable/green_chili_thumbnail</item>
+        <item>@drawable/garlic_thumbnail</item>
+        <item>@drawable/cauliflower_thumbnail</item>
+        <item>@drawable/ginger_thumbnail</item>
+        <item>@drawable/pumpkin_thumbnail</item>
+        <item>@drawable/cucumber_thumbnail</item>
+    </array>
+
+    <array name="items_images">
+        <item>@drawable/potato</item>
+        <item>@drawable/carrot</item>
+        <item>@drawable/onion</item>
+        <item>@drawable/red_tomato</item>
+        <item>@drawable/green_chili</item>
+        <item>@drawable/garlic</item>
+        <item>@drawable/cauliflower</item>
+        <item>@drawable/ginger</item>
+        <item>@drawable/pumpkin</item>
+        <item>@drawable/cucumber</item>
+    </array>
+</resources>
