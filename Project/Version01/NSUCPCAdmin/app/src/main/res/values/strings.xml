@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NSUCPCAdmin</string>
+    <string name="welcome">Welcome</string>
+    <string name="tagline_employer">Let’s help you find your perfect employee</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="log_in">Log In</string>
+    <string name="add_jobs">Add Jobs</string>
+    <string name="search_jobs">Search Jobs</string>
+    <string name="see_all_jobs">See All Jobs</string>
 </resources>

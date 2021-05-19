@@ -28,13 +28,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="" />
+    <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/add_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/plus_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/search_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/user_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/menu/mainscreen_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[33220fdb]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
