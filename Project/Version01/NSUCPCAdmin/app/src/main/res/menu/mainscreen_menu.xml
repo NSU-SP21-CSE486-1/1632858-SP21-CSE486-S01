@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/mainmenu_option1"
-        android:title="Home"
+        android:title="@string/home"
         app:showAsAction="never"/>
 
     <item android:id="@+id/mainmenu_option2"
-        android:title="Add Jobs"
+        android:title="@string/add_jobs"
         app:showAsAction="never"/>
 
     <item android:id="@+id/mainmenu_option3"
-        android:title="Search"
+        android:title="@string/search"
         app:showAsAction="never"/>
 
     <item android:id="@+id/mainmenu_option4"
-        android:title="All Jobs"
+        android:title="@string/all_jobs"
         app:showAsAction="never"/>
 
     <item android:id="@+id/mainmenu_option5"
-        android:title="Edit Password"
+        android:title="@string/change_password"
         app:showAsAction="never"/>
 
     <item android:id="@+id/mainmenu_option6"
-        android:title="Logout"
+        android:title="@string/logout"
         app:showAsAction="never"/>
 
 </menu>

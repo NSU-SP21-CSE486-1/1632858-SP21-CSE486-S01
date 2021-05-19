@@ -8,4 +8,14 @@
     <string name="add_jobs">Add Jobs</string>
     <string name="search_jobs">Search Jobs</string>
     <string name="see_all_jobs">See All Jobs</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="all_jobs">All Jobs</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="type_old_password">Type old password</string>
+    <string name="type_new_password">Type new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

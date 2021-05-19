@@ -20,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
         //set status bar color
         if(Build.VERSION.SDK_INT >= 21){
             window = this.getWindow();
-            window.setStatusBarColor(this.getResources().getColor(R.color.topbar_color));
+            window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
 
         //splashscreen show delay
