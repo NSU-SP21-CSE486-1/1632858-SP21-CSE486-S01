@@ -1,34 +1,27 @@
 package com.sadmanahmed.nsucpcadmin;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
-import static com.google.android.material.internal.ContextUtils.getActivity;
-
-public class ChangePassword extends AppCompatActivity {
+public class FirstJobPostActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_password);
+        setContentView(R.layout.activity_first_job_post);
 
         //Set the action bar title
-        getSupportActionBar().setTitle(R.string.change_password);
+        getSupportActionBar().setTitle(R.string.job_post);
 
         //set the actionbar color
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E9D36B")));
@@ -52,12 +45,14 @@ public class ChangePassword extends AppCompatActivity {
 
             case R.id.mainmenu_option1:
 //                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(ChangePassword.this, MainActivity.class);
+                Intent intent1 = new Intent(FirstJobPostActivity.this, MainActivity.class);
                 startActivity(intent1);
                 return true;
 
             case R.id.mainmenu_option2:
-                Toast.makeText(this, "Add Jobs", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Add Jobs", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(FirstJobPostActivity.this, FirstJobPostActivity.class);
+                startActivity(intent2);
                 return true;
 
             case R.id.mainmenu_option3:
@@ -70,17 +65,21 @@ public class ChangePassword extends AppCompatActivity {
 
             case R.id.mainmenu_option5:
 //                Toast.makeText(this, "Change Password", Toast.LENGTH_SHORT).show();
-                Intent intent5 = new Intent(ChangePassword.this, ChangePassword.class);
+                Intent intent5 = new Intent(FirstJobPostActivity.this, ChangePasswordActivity.class);
                 startActivity(intent5);
                 return true;
 
             case R.id.mainmenu_option6:
-                Intent intent6 = new Intent(ChangePassword.this, LoginActivity.class);
+                Intent intent6 = new Intent(FirstJobPostActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void onNextBtnClick(View view) {
+        Toast.makeText(this, "works", Toast.LENGTH_SHORT).show();
     }
 }

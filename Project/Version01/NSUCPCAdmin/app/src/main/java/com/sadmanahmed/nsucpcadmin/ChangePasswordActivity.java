@@ -10,21 +10,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class ChangePasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_change_password);
 
         //Set the action bar title
-        getSupportActionBar().setTitle(R.string.welcome);
+        getSupportActionBar().setTitle(R.string.change_password);
 
         //set the actionbar color
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E9D36B")));
+
+        //set the back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     //Set the options menu on the action bar
@@ -42,14 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mainmenu_option1:
 //                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent1 = new Intent(ChangePasswordActivity.this, MainActivity.class);
                 startActivity(intent1);
                 return true;
 
             case R.id.mainmenu_option2:
-//                Toast.makeText(this, "Add Jobs", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(MainActivity.this, FirstJobPostActivity.class);
-                startActivity(intent2);
+                Toast.makeText(this, "Add Jobs", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.mainmenu_option3:
@@ -62,22 +62,17 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mainmenu_option5:
 //                Toast.makeText(this, "Change Password", Toast.LENGTH_SHORT).show();
-                Intent intent5 = new Intent(MainActivity.this, ChangePasswordActivity.class);
+                Intent intent5 = new Intent(ChangePasswordActivity.this, ChangePasswordActivity.class);
                 startActivity(intent5);
                 return true;
 
             case R.id.mainmenu_option6:
-                Intent intent6 = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent6 = new Intent(ChangePasswordActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    public void onAddJobsClick(View view) {
-        Intent intent2 = new Intent(MainActivity.this, FirstJobPostActivity.class);
-        startActivity(intent2);
     }
 }

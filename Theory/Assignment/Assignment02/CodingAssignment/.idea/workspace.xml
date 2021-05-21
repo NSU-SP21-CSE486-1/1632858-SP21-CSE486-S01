@@ -29,30 +29,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888de2e9-db3b-4e98-99d4-e2370971a3c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/.idea/render.experimental.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/ChangePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/button2_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/change_password_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/edit_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/font/poppins_light.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_change_password.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/FirstJobPostActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/checkbox_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/drawable/edit_calendar_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_first_job_post.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/ChangePasswordActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/java/com/sadmanahmed/nsucpcadmin/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/menu/mainscreen_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/menu/mainscreen_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Project/Version01/NSUCPCAdmin/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[33220fdb]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -266,10 +263,10 @@
     </state>
     <state x="649" y="309" width="671" height="484" key="Downloadable.Font.Dialog.Size/59.25.1861.1055@59.25.1861.1055" timestamp="1618648481100" />
     <state x="650" y="311" key="Downloadable.Font.Dialog.Size/61.27.1859.1053@61.27.1859.1053" timestamp="1617569127017" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1620415859689">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1621507809680">
       <screen x="59" y="25" width="1861" height="1055" />
     </state>
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.25.1861.1055@59.25.1861.1055" timestamp="1620415859689" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.25.1861.1055@59.25.1861.1055" timestamp="1621507809680" />
     <state x="773" y="311" width="472" height="491" key="FileChooserDialogImpl/61.27.1859.1053@61.27.1859.1053" timestamp="1617974498679" />
     <state width="1813" height="275" key="GridCell.Tab.0.bottom/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />
     <state width="1813" height="275" key="GridCell.Tab.0.center/61.27.1859.1053@61.27.1859.1053" timestamp="1617742616040" />

@@ -18,4 +18,5 @@
     <string name="confirm_new_password">Confirm new password</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="job_post">Job Post</string>
 </resources>
