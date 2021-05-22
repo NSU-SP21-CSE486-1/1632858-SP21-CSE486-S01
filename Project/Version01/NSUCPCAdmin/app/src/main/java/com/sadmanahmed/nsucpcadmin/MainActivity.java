@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.mainmenu_option6:
+                FirebaseAuth.getInstance().signOut();
                 Intent intent6 = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;

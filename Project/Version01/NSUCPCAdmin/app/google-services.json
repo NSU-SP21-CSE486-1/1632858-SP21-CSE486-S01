@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619677467553",
+    "project_id": "nsucpc-240cc",
+    "storage_bucket": "nsucpc-240cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619677467553:android:daf3a454b8170d3f4f01e0",
+        "android_client_info": {
+          "package_name": "com.sadmanahmed.nsucpcadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619677467553-0rj81uprstite80gmtlfkdil8rfsjvp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6J_07gqEF4RtXiOxvgIStcRadHsU-od8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619677467553-0rj81uprstite80gmtlfkdil8rfsjvp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

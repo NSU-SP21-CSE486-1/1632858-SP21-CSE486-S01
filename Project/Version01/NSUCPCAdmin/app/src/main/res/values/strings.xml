@@ -19,4 +19,7 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="job_post">Job Post</string>
+    <string name="error_email">Please enter a valid email address</string>
+    <string name="error_account">You have to become a admin to access the CPC employer app.</string>
+    <string name="empty_password_error_message">Password cannot be empty</string>
 </resources>
