@@ -15,6 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import static android.R.layout.simple_list_item_1;
 
 public class SecondJobPostActivity extends AppCompatActivity {
@@ -94,6 +96,9 @@ public class SecondJobPostActivity extends AppCompatActivity {
                 return true;
 
             case R.id.mainmenu_option6:
+                FirebaseAuth.getInstance().signOut();
+                SessionManagement sessionManagement = new SessionManagement(SecondJobPostActivity.this);
+                sessionManagement.removeSession();
                 Intent intent6 = new Intent(SecondJobPostActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;

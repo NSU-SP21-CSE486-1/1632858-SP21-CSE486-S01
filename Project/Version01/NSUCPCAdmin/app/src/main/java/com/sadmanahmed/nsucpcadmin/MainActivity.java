@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mainmenu_option6:
                 FirebaseAuth.getInstance().signOut();
+                SessionManagement sessionManagement = new SessionManagement(MainActivity.this);
+                sessionManagement.removeSession();
                 Intent intent6 = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;

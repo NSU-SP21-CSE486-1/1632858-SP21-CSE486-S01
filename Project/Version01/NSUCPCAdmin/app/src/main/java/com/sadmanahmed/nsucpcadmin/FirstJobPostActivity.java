@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class FirstJobPostActivity extends AppCompatActivity {
 
     @Override
@@ -70,6 +72,9 @@ public class FirstJobPostActivity extends AppCompatActivity {
                 return true;
 
             case R.id.mainmenu_option6:
+                FirebaseAuth.getInstance().signOut();
+                SessionManagement sessionManagement = new SessionManagement(FirstJobPostActivity.this);
+                sessionManagement.removeSession();
                 Intent intent6 = new Intent(FirstJobPostActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;

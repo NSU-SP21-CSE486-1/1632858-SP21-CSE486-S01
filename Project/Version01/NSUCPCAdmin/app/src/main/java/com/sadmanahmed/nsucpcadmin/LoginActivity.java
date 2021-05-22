@@ -68,6 +68,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    UserSession userSession = new UserSession(email,password);
+                    SessionManagement sessionManagement = new SessionManagement(LoginActivity.this);
+                    sessionManagement.saveSession(userSession);
+                    finish();
                     moveToMainActivity();
 
                 } else {
