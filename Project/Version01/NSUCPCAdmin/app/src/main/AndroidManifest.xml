@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NSUCPCAdmin">
-        <activity android:name=".FirstJobPostActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".SuccessfullPostActivity"></activity>
+        <activity
+            android:name=".SecondJobPostActivity"
+            android:parentActivityName=".FirstJobPostActivity" />
+        <activity
+            android:name=".FirstJobPostActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ChangePasswordActivity"
             android:parentActivityName=".MainActivity" />

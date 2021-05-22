@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nsu_dep_list">
+        <item>Department of Accounting and Finance</item>
+        <item>Department of Economics</item>
+        <item>Department of Management</item>
+        <item>Department of Marketing and International Business</item>
+        <item>Department of Architecture</item>
+        <item>Department of Civil and Environmental Engineering</item>
+        <item>Department of Electrical and Computer Engineering</item>
+        <item>Department of English and Modern Languages</item>
+        <item>Department of History and Philosophy</item>
+        <item>Department of Law</item>
+        <item>Department of Political Science and Sociology</item>
+        <item>Department of Biochemistry and Microbiology</item>
+        <item>Department of Environmental Science and Management</item>
+        <item>Department of Pharmaceutical Sciences</item>
+        <item>Department of Public Health</item>
+    </string-array>
+
+    <string-array name="job_types">
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Intern</item>
+    </string-array>
+</resources>

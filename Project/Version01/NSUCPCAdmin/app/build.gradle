@@ -38,4 +38,5 @@ dependencies {
     implementation 'com.github.BlackBoxVision:datetimepicker-edittext:v0.4.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'me.bendik.simplerangeview:simplerangeview:0.2.0'
 }

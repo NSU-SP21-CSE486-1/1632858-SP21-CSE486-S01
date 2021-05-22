@@ -13,12 +13,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class FirstJobPostActivity extends AppCompatActivity {
+public class SuccessfullPostActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_job_post);
+        setContentView(R.layout.activity_successfull_post);
 
         //Set the action bar title
         getSupportActionBar().setTitle(R.string.job_post);
@@ -45,13 +45,13 @@ public class FirstJobPostActivity extends AppCompatActivity {
 
             case R.id.mainmenu_option1:
 //                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(FirstJobPostActivity.this, MainActivity.class);
+                Intent intent1 = new Intent(SuccessfullPostActivity.this, MainActivity.class);
                 startActivity(intent1);
                 return true;
 
             case R.id.mainmenu_option2:
 //                Toast.makeText(this, "Add Jobs", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(FirstJobPostActivity.this, FirstJobPostActivity.class);
+                Intent intent2 = new Intent(SuccessfullPostActivity.this, FirstJobPostActivity.class);
                 startActivity(intent2);
                 return true;
 
@@ -65,12 +65,12 @@ public class FirstJobPostActivity extends AppCompatActivity {
 
             case R.id.mainmenu_option5:
 //                Toast.makeText(this, "Change Password", Toast.LENGTH_SHORT).show();
-                Intent intent5 = new Intent(FirstJobPostActivity.this, ChangePasswordActivity.class);
+                Intent intent5 = new Intent(SuccessfullPostActivity.this, ChangePasswordActivity.class);
                 startActivity(intent5);
                 return true;
 
             case R.id.mainmenu_option6:
-                Intent intent6 = new Intent(FirstJobPostActivity.this, LoginActivity.class);
+                Intent intent6 = new Intent(SuccessfullPostActivity.this, LoginActivity.class);
                 startActivity(intent6);
                 return true;
 
@@ -79,9 +79,8 @@ public class FirstJobPostActivity extends AppCompatActivity {
         }
     }
 
-    public void onNextBtnClick(View view) {
-        Toast.makeText(this, "works", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(FirstJobPostActivity.this, SecondJobPostActivity.class);
+    public void onBackToHomeBtnClick(View view) {
+        Intent intent = new Intent(SuccessfullPostActivity.this, MainActivity.class);
         startActivity(intent);
     }
 }
