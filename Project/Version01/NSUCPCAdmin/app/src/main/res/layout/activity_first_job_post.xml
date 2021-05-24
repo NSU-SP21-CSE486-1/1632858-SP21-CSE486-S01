@@ -164,7 +164,7 @@
         app:layout_constraintTop_toBottomOf="@+id/employeeNeeded_edittext" />
 
     <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
-        android:id="@+id/dateOfBirth_edittext"
+        android:id="@+id/deadline_edittext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -196,6 +196,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="onNextBtnClick"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateOfBirth_edittext" />
+        app:layout_constraintTop_toBottomOf="@+id/deadline_edittext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

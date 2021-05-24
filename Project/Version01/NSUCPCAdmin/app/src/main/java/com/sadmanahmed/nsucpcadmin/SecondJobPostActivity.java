@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +25,18 @@ public class SecondJobPostActivity extends AppCompatActivity {
     //declaring necessary variables
     private AutoCompleteTextView uDepName;
     private AutoCompleteTextView uJobType;
+
+    private String companyName;
+    private String vacantPosition;
+    private String location;
+    private String employeeNeeded;
+    private String deadline;
+    private String isNameHidden;
+
+    private EditText uRecruiterEmail;
+    private EditText uMinSalary;
+    private EditText uMaxSalary;
+    private Switch isSalaryNegotiable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +67,21 @@ public class SecondJobPostActivity extends AppCompatActivity {
         ArrayAdapter jobTypeAdapter = new ArrayAdapter(this, simple_list_item_1, jobTypeList);
 
         uJobType.setAdapter(jobTypeAdapter);
+
+        //setting where to get the value from
+        uRecruiterEmail = findViewById(R.id.recruiterEmail_edittext);
+        uMinSalary = findViewById(R.id.salaryMinRange_edittext);
+        uMaxSalary = findViewById(R.id.salaryMaxRange_edittext);
+        isSalaryNegotiable = findViewById(R.id.isSalaryNegotiable);
+
+        //get data from the previous activity
+        Intent intent = getIntent();
+        companyName = intent.getStringExtra(FirstJobPostActivity.COMPANY_NAME);
+        isNameHidden = intent.getStringExtra(FirstJobPostActivity.ISNAMEHIDDEN);
+        vacantPosition = intent.getStringExtra(FirstJobPostActivity.VACANT_POSITION);
+        location = intent.getStringExtra(FirstJobPostActivity.LOCATION);
+        employeeNeeded = intent.getStringExtra(FirstJobPostActivity.NUMBER_OF_EMPLOYEE);
+        deadline = intent.getStringExtra(FirstJobPostActivity.DEADLINE);
 
     }
 
@@ -109,8 +138,47 @@ public class SecondJobPostActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public String toString() {
+        return "SecondJobPostActivity{" +
+                "uDepName=" + uDepName +
+                ", uJobType=" + uJobType +
+                ", companyName='" + companyName + '\'' +
+                ", vacantPosition='" + vacantPosition + '\'' +
+                ", location='" + location + '\'' +
+                ", employeeNeeded='" + employeeNeeded + '\'' +
+                ", deadline='" + deadline + '\'' +
+                ", isNameHidden='" + isNameHidden + '\'' +
+                ", uRecruiterEmail=" + uRecruiterEmail +
+                ", uMinSalary=" + uMinSalary +
+                ", uMaxSalary=" + uMaxSalary +
+                ", isSalaryNegotiable=" + isSalaryNegotiable +
+                '}';
+    }
+
     public void onPostBtnClick(View view) {
-        Toast.makeText(this, "Works!!!!", Toast.LENGTH_SHORT).show();
+        //getting the rest of the data
+        String depName = uDepName.getText().toString();
+        String jobType = uJobType.getText().toString();
+        String recruiterEmail = uRecruiterEmail.getText().toString();
+        String minSalary = uMinSalary.getText().toString();
+        String maxSalary = uMaxSalary.getText().toString();
+        String salaryNegotiability = String.valueOf(isSalaryNegotiable);
+
+        String totalResult = "company name: " + companyName +
+                "name hidden: " + isNameHidden +
+                "vacant position: " + vacantPosition +
+                "location: " + location +
+                "employee needed: " + employeeNeeded +
+                "deadline:" + deadline +
+                "department: " + depName +
+                "job type: " + jobType +
+                "recruiter email: " + recruiterEmail +
+                "minimum salary: " + minSalary +
+                "maximum salary: " + maxSalary +
+                "salary negotiable: " + salaryNegotiability;
+
+        Toast.makeText(this, totalResult, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
         startActivity(intent);
     }

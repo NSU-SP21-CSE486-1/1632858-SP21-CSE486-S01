@@ -11,11 +11,28 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class FirstJobPostActivity extends AppCompatActivity {
+    //declaring necessary variables
+    private EditText uCompanyName;
+    private EditText uVacantPosition;
+    private EditText uLocation;
+    private EditText uNumberOfEmployee;
+    private EditText uDeadline;
+    private Switch isNameHidden;
+
+    //setting the varibales to pass the values through intent
+    public static final String COMPANY_NAME = "com.sadmanahmed.nsucpcadmin.extra.COMPANYNAME";
+    public static final String VACANT_POSITION = "com.sadmanahmed.nsucpcadmin.extra.VACANTPOSITION";
+    public static final String LOCATION = "com.sadmanahmed.nsucpcadmin.extra.LOCATION";
+    public static final String NUMBER_OF_EMPLOYEE = "com.sadmanahmed.nsucpcadmin.extra.NUMEROFEMPLOYEE";
+    public static final String DEADLINE = "com.sadmanahmed.nsucpcadmin.extra.DEADLINE";
+    public static final String ISNAMEHIDDEN = "com.sadmanahmed.nsucpcadmin.extra.ISNAMEHIDDEN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +47,15 @@ public class FirstJobPostActivity extends AppCompatActivity {
 
         //set the back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //setting where to take the value
+        uCompanyName = findViewById(R.id.companyName_edittext);
+        uVacantPosition = findViewById(R.id.vacantPosition_edittext);
+        uLocation = findViewById(R.id.location_edittext);
+        uNumberOfEmployee = findViewById(R.id.employeeNeeded_edittext);
+        uDeadline = findViewById(R.id.deadline_edittext);
+        isNameHidden = findViewById(R.id.isHiddenCompanyName);
+
     }
 
     //Set the options menu on the action bar
@@ -85,8 +111,41 @@ public class FirstJobPostActivity extends AppCompatActivity {
     }
 
     public void onNextBtnClick(View view) {
-        Toast.makeText(this, "works", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(FirstJobPostActivity.this, SecondJobPostActivity.class);
-        startActivity(intent);
+//        Toast.makeText(this, "works", Toast.LENGTH_SHORT).show();
+        boolean allowTONext = true;
+        //getting data
+        String companyName = uCompanyName.getText().toString();
+        String vacantPosition = uVacantPosition.getText().toString();
+        String location = uLocation.getText().toString();
+        String employeeNeeded = uNumberOfEmployee.getText().toString();
+        String deadline = uDeadline.getText().toString();
+        Boolean isCompanyNameHidden = isNameHidden.isChecked();
+
+        //setting up the validation
+        if(companyName.length() == 0){
+            uCompanyName.setError("Company name cannot be empty");
+            allowTONext = false;
+        }
+
+        if(vacantPosition.length() == 0){
+            uVacantPosition.setError("You should mention the vacant position");
+            allowTONext = false;
+        }
+
+        //passing data from one activity to another
+        if(allowTONext){
+            Intent intent = new Intent(FirstJobPostActivity.this, SecondJobPostActivity.class);
+
+            intent.putExtra(COMPANY_NAME, companyName);
+            intent.putExtra(VACANT_POSITION, vacantPosition);
+            intent.putExtra(LOCATION, location);
+            intent.putExtra(NUMBER_OF_EMPLOYEE, employeeNeeded);
+            intent.putExtra(DEADLINE, deadline);
+            intent.putExtra(String.valueOf(ISNAMEHIDDEN), isCompanyNameHidden);
+
+            startActivity(intent);
+
+        }
+
     }
 }
