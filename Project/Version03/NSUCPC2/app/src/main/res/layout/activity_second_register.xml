@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        tools:context=".uicontroller.SecondActivity">
+
+        <TextView
+            android:id="@+id/register_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/lets_get_you_know_a_little_better"
+            android:textColor="#5A6E7E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="50dp"
+            app:boxBackgroundColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_title_2"
+            app:placeholderTextColor="@color/black">
+
+            <AutoCompleteTextView
+                android:id="@+id/schoolName_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:inputType="none"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/name_of_your_school"
+                android:textColor="#4C4C4C" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            app:boxBackgroundColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <AutoCompleteTextView
+                android:id="@+id/depName_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:inputType="none"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/name_of_your_department"
+                android:textColor="#4C4C4C" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+            android:id="@+id/dateOfBirth_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:drawableEnd="@drawable/calender_icon"
+            android:background="@drawable/round_border"
+            android:hint="@string/select_date_of_birth"
+            android:padding="16dp"
+            android:textColor="#4C4C4C"
+            android:textColorHint="#878686"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+        <EditText
+            android:id="@+id/nidNumber_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:hint="@string/your_nid_number"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#4C4C4C"
+            android:textColorHint="#878686"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirth_edittext" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            app:boxBackgroundColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nidNumber_edittext">
+
+            <AutoCompleteTextView
+                android:id="@+id/gender_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:inputType="none"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/gender"
+                android:textColor="#4C4C4C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/presentAddress_expandableMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:onClick="expandPresentAddress">
+
+                <TextView
+                    android:id="@+id/present_address_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"
+                    android:padding="16dp"
+                    android:text="@string/your_present_address"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandable_present_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/present_address_textview">
+
+                    <EditText
+                        android:id="@+id/present_address_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_country"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/present_address_district"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_district"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_country" />
+
+                    <EditText
+                        android:id="@+id/present_address_postOffice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_post_office"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_district" />
+
+                    <EditText
+                        android:id="@+id/present_address_policeStation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_police_station"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_postOffice" />
+
+                    <EditText
+                        android:id="@+id/present_address_postalCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_postalCode"
+                        android:inputType="numberDecimal"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_policeStation" />
+
+
+                    <EditText
+                        android:id="@+id/present_address_house"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_house"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_postalCode" />
+
+                    <EditText
+                        android:id="@+id/present_address_road"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_road"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/present_address_house" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/permanentAddress_expandableMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentAddress_expandableMenu" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:onClick="expandPermanentAddress">
+
+                <TextView
+                    android:id="@+id/permanent_address_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"
+                    android:padding="16dp"
+                    android:text="@string/your_permanent_address"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandable_permanent_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/permanent_address_textview">
+
+                    <EditText
+                        android:id="@+id/permanent_address_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_country"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/permanent_address_district"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_district"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_country" />
+
+                    <EditText
+                        android:id="@+id/permanent_address_postOffice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_post_office"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_district" />
+
+                    <EditText
+                        android:id="@+id/permanent_address_policeStation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_police_station"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_postOffice" />
+
+                    <EditText
+                        android:id="@+id/permanent_address_postalCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_postalCode"
+                        android:inputType="numberDecimal"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_policeStation" />
+
+
+                    <EditText
+                        android:id="@+id/permanent_address_house"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_house"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_postalCode" />
+
+                    <EditText
+                        android:id="@+id/permanent_address_road"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_border"
+                        android:ems="10"
+                        android:hint="@string/per_road"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#4c4c4c"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/permanent_address_house" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="onSaveClick"
+            android:text="@string/save"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#5A6E7E"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permanentAddress_expandableMenu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
