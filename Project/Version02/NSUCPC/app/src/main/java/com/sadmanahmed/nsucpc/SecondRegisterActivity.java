@@ -231,7 +231,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
         }
         if (allowSave) {
             StudentModel studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
-            mDatabaseReference.child(uKey).push().setValue(studentModel);
+            mDatabaseReference.child(uKey).setValue(studentModel);
 
 
 

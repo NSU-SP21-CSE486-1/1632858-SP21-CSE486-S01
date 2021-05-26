@@ -52,9 +52,8 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
     DatabaseReference mDatabaseReference;
     FirebaseDatabase database;
-
     StorageReference storageReference;
-    DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,12 +100,12 @@ public class SecondJobPostActivity extends AppCompatActivity {
         employeeNeeded = intent.getStringExtra(FirstJobPostActivity.NUMBER_OF_EMPLOYEE);
         deadline = intent.getStringExtra(FirstJobPostActivity.DEADLINE);
 
+        // database and storage initialization
         database = FirebaseDatabase.getInstance();
         mDatabaseReference = database.getReference("JobModel");
-
         storageReference = FirebaseStorage.getInstance().getReference();
         database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference("JobModel");
+
     }
 
     //Set the options menu on the action bar
@@ -163,21 +162,24 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
 
     public void onPostBtnClick(View view) {
+        // implicit intent to get the pdf file
         Intent intent = new Intent();
         intent.setType("application/pdf");
         intent.setAction(intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(intent, "Choose A Pdf File"), 12);
     }
+
+    // checking the permissions is okay
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 12 && resultCode == RESULT_OK && data !=null && data.getData() !=null){
-            uploadPdfFile(data.getData());
+            uploadPdfFileAndPostData(data.getData());
         }
     }
 
-    private void uploadPdfFile(Uri data) {
+    private void uploadPdfFileAndPostData(Uri data) {
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading Pdf File");
         progressDialog.show();
@@ -208,10 +210,8 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
                         JobModel jobModel = new JobModel(companyName, isNameHidden,vacantPosition,location,
                                 Integer.parseInt(employeeNeeded),deadline, depName,jobType,recruiterEmail,
-                                Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability,"test",uri.toString());
-                        mDatabaseReference.child(uKey).push().setValue(jobModel);
-
-                        Toast.makeText(getApplicationContext(), "Data Upload Successfully", Toast.LENGTH_SHORT).show();
+                                Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability,uri.toString(),uri.toString());
+                        mDatabaseReference.child(uKey).setValue(jobModel);
                         progressDialog.dismiss();
                         Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
                         startActivity(intent);

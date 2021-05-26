@@ -15,21 +15,28 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class LoginActivity extends AppCompatActivity {
     EditText mLoginEmail;
     EditText mLoginPassword;
     FirebaseAuth uAuth;
-
+    FirebaseDatabase database;
+    DatabaseReference mDatabaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         uAuth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        mDatabaseReference = database.getReference("StudentModel");
 
         mLoginEmail = findViewById(R.id.login_email_edittext);
         mLoginPassword = findViewById(R.id.login_password_edittext);
+
     }
 
     public void onRegisterClick(View view) {
@@ -66,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                     SessionManagement sessionManagement = new SessionManagement(LoginActivity.this);
                     sessionManagement.saveSession(userSession);
                     finish();
-                    moveToMainActivity();
+                    moveToMainActivity(email);
 
                 } else {
                     Toast.makeText(getApplicationContext(), R.string.error_account, Toast.LENGTH_SHORT).show();
@@ -76,7 +83,8 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void moveToMainActivity() {
+    private void moveToMainActivity(String email) {
+        Query query = database.getReference("StudentModel").child("nsuMail").equalTo(email);
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }
