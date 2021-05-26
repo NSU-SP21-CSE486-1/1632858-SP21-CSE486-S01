@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "297534103714",
+    "project_id": "nsu-cpc-62c24",
+    "storage_bucket": "nsu-cpc-62c24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297534103714:android:f4c90e77b942f2e05677fb",
+        "android_client_info": {
+          "package_name": "com.sadmanahmed.nsucpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297534103714-fkvr8jc1pvvs08v4vvg6423888p996tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxUveS0sT2pXIP_zyXqf9SHS5OImzijf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297534103714-fkvr8jc1pvvs08v4vvg6423888p996tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

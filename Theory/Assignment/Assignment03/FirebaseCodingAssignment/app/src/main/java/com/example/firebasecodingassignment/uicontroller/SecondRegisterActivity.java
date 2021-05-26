@@ -241,9 +241,6 @@ public class SecondRegisterActivity extends AppCompatActivity {
 
                     {
                         finish();
-                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
                     }
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {

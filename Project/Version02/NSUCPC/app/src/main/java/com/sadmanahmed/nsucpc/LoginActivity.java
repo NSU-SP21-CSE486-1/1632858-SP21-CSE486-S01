@@ -20,7 +20,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText mLoginEmail;
     EditText mLoginPassword;
     FirebaseAuth uAuth;
-    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

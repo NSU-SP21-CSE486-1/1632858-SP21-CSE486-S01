@@ -67,6 +67,8 @@ public class SecondRegisterActivity extends AppCompatActivity {
     DatabaseReference mDatabaseReference;
     FirebaseAuth uAuth;
 
+    FirebaseDatabase database;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,7 +151,8 @@ public class SecondRegisterActivity extends AppCompatActivity {
         phoneNumber = intent.getStringExtra(FirstRegisterActivity.USER_PHONENUMBER);
         password = intent.getStringExtra(FirstRegisterActivity.USER_PASSWORD);
 
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("StudentModel");
+        database = FirebaseDatabase.getInstance();
+        mDatabaseReference = database.getReference("StudentModel");
         uAuth = FirebaseAuth.getInstance();
     }
 
@@ -217,6 +220,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
                 ", Postal Code: " + permanentPostalCode +
                 ", District: " + permanentDistrict +
                 ", Country: " + permanentCountry;
+
         String uKey = mDatabaseReference.push().getKey();
 
         boolean allowSave = true;
@@ -227,10 +231,9 @@ public class SecondRegisterActivity extends AppCompatActivity {
         }
         if (allowSave) {
             StudentModel studentModel = new StudentModel(fullName,Integer.parseInt(nsuID),nsuMail,Integer.parseInt(phoneNumber),password,schoolName,departmentName,dob,NID,gender,presentAddress,permanentAddress);
-            mDatabaseReference.child(uKey).setValue(studentModel);
+            mDatabaseReference.child(uKey).push().setValue(studentModel);
 
-            Intent intent = new Intent(SecondRegisterActivity.this, LoginActivity.class);
-            startActivity(intent);
+
 
         }
         uAuth.createUserWithEmailAndPassword(nsuMail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -239,10 +242,9 @@ public class SecondRegisterActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
 
                     {
-                        finish();
-                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        Intent intent = new Intent(SecondRegisterActivity.this, LoginActivity.class);
                         startActivity(intent);
+                        finish();
                     }
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
