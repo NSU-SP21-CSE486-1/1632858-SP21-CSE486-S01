@@ -18,6 +18,8 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import static android.R.layout.simple_list_item_1;
 
@@ -37,6 +39,9 @@ public class SecondJobPostActivity extends AppCompatActivity {
     private EditText uMinSalary;
     private EditText uMaxSalary;
     private Switch isSalaryNegotiable;
+
+    DatabaseReference mDatabaseReference;
+    FirebaseDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +88,8 @@ public class SecondJobPostActivity extends AppCompatActivity {
         employeeNeeded = intent.getStringExtra(FirstJobPostActivity.NUMBER_OF_EMPLOYEE);
         deadline = intent.getStringExtra(FirstJobPostActivity.DEADLINE);
 
+        database = FirebaseDatabase.getInstance();
+        mDatabaseReference = database.getReference("JobModel   ");
     }
 
     //Set the options menu on the action bar
@@ -138,24 +145,6 @@ public class SecondJobPostActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public String toString() {
-        return "SecondJobPostActivity{" +
-                "uDepName=" + uDepName +
-                ", uJobType=" + uJobType +
-                ", companyName='" + companyName + '\'' +
-                ", vacantPosition='" + vacantPosition + '\'' +
-                ", location='" + location + '\'' +
-                ", employeeNeeded='" + employeeNeeded + '\'' +
-                ", deadline='" + deadline + '\'' +
-                ", isNameHidden='" + isNameHidden + '\'' +
-                ", uRecruiterEmail=" + uRecruiterEmail +
-                ", uMinSalary=" + uMinSalary +
-                ", uMaxSalary=" + uMaxSalary +
-                ", isSalaryNegotiable=" + isSalaryNegotiable +
-                '}';
-    }
-
     public void onPostBtnClick(View view) {
         //getting the rest of the data
         String depName = uDepName.getText().toString();
@@ -163,22 +152,19 @@ public class SecondJobPostActivity extends AppCompatActivity {
         String recruiterEmail = uRecruiterEmail.getText().toString();
         String minSalary = uMinSalary.getText().toString();
         String maxSalary = uMaxSalary.getText().toString();
-        String salaryNegotiability = String.valueOf(isSalaryNegotiable);
+        String salaryNegotiability = String.valueOf(isSalaryNegotiable.isChecked());
 
-        String totalResult = "company name: " + companyName +
-                "name hidden: " + isNameHidden +
-                "vacant position: " + vacantPosition +
-                "location: " + location +
-                "employee needed: " + employeeNeeded +
-                "deadline:" + deadline +
-                "department: " + depName +
-                "job type: " + jobType +
-                "recruiter email: " + recruiterEmail +
-                "minimum salary: " + minSalary +
-                "maximum salary: " + maxSalary +
-                "salary negotiable: " + salaryNegotiability;
+        if(salaryNegotiability == "true"){
+            minSalary = "0";
+            maxSalary = "0";
+        }
 
-        Toast.makeText(this, totalResult, Toast.LENGTH_SHORT).show();
+
+        String uKey = mDatabaseReference.push().getKey();
+
+        JobModel jobModel = new JobModel(companyName, isNameHidden,vacantPosition,location,Integer.parseInt(employeeNeeded),deadline, depName,jobType,recruiterEmail,Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability);
+        mDatabaseReference.child(uKey).push().setValue(jobModel);
+        
         Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
         startActivity(intent);
     }

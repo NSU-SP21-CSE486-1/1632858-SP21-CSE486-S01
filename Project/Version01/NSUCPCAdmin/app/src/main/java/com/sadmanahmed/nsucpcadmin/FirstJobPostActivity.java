@@ -119,7 +119,7 @@ public class FirstJobPostActivity extends AppCompatActivity {
         String location = uLocation.getText().toString();
         String employeeNeeded = uNumberOfEmployee.getText().toString();
         String deadline = uDeadline.getText().toString();
-        Boolean isCompanyNameHidden = isNameHidden.isChecked();
+        String isCompanyNameHidden = String.valueOf(isNameHidden.isChecked());
 
         //setting up the validation
         if(companyName.length() == 0){
@@ -141,7 +141,7 @@ public class FirstJobPostActivity extends AppCompatActivity {
             intent.putExtra(LOCATION, location);
             intent.putExtra(NUMBER_OF_EMPLOYEE, employeeNeeded);
             intent.putExtra(DEADLINE, deadline);
-            intent.putExtra(String.valueOf(ISNAMEHIDDEN), isCompanyNameHidden);
+            intent.putExtra(ISNAMEHIDDEN, isCompanyNameHidden);
 
             startActivity(intent);
 

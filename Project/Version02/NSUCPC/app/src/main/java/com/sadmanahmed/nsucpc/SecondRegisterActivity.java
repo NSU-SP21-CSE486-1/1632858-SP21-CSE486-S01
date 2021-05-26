@@ -68,7 +68,7 @@ public class SecondRegisterActivity extends AppCompatActivity {
     FirebaseAuth uAuth;
 
     FirebaseDatabase database;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
