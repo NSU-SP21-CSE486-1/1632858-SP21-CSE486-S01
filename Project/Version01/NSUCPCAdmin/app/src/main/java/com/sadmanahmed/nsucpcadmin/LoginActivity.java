@@ -3,6 +3,7 @@ package com.sadmanahmed.nsucpcadmin;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.lang.ref.WeakReference;
+
 public class LoginActivity extends AppCompatActivity {
     // declaring necessary variables
     Window window;
@@ -28,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        checkForRuntimePermissions();
 
         //set status bar color
         if(Build.VERSION.SDK_INT >= 21){
@@ -40,6 +44,10 @@ public class LoginActivity extends AppCompatActivity {
 
         mLoginEmail = findViewById(R.id.login_email_edittext);
         mLoginPassword = findViewById(R.id.login_password_edittext);
+    }
+
+    private void checkForRuntimePermissions() {
+        new AndroidRunTimePermissions(new WeakReference<Activity>(this)).checkForPermissions();
     }
 
     public void onLoginBtnClick(View view) {

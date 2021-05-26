@@ -13,11 +13,13 @@ public class JobModel {
     int minSalary;
     int maxSalary;
     String isSalaryNegotiable;
+    String name;
+    String uri;
 
     public JobModel() {
     }
 
-    public JobModel(String companyName, String isNameHidden, String vacantPosition, String location, int employeeNeeded, String deadline, String depName, String jobType, String recruiterEmail, int minSalary, int maxSalary, String isSalaryNegotiable) {
+    public JobModel(String companyName, String isNameHidden, String vacantPosition, String location, int employeeNeeded, String deadline, String depName, String jobType, String recruiterEmail, int minSalary, int maxSalary, String isSalaryNegotiable, String name, String uri) {
         this.companyName = companyName;
         this.isNameHidden = isNameHidden;
         this.vacantPosition = vacantPosition;
@@ -30,8 +32,8 @@ public class JobModel {
         this.minSalary = minSalary;
         this.maxSalary = maxSalary;
         this.isSalaryNegotiable = isSalaryNegotiable;
-
-
+        this.name = name;
+        this.uri = uri;
     }
 
     public String getCompanyName() {
@@ -128,5 +130,21 @@ public class JobModel {
 
     public void setIsSalaryNegotiable(String isSalaryNegotiable) {
         this.isSalaryNegotiable = isSalaryNegotiable;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
     }
 }

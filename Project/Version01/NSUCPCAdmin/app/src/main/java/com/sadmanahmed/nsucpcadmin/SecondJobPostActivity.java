@@ -1,11 +1,14 @@
 package com.sadmanahmed.nsucpcadmin;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,9 +20,16 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.annotations.NotNull;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import static android.R.layout.simple_list_item_1;
 
@@ -42,6 +52,9 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
     DatabaseReference mDatabaseReference;
     FirebaseDatabase database;
+
+    StorageReference storageReference;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +102,11 @@ public class SecondJobPostActivity extends AppCompatActivity {
         deadline = intent.getStringExtra(FirstJobPostActivity.DEADLINE);
 
         database = FirebaseDatabase.getInstance();
-        mDatabaseReference = database.getReference("JobModel   ");
+        mDatabaseReference = database.getReference("JobModel");
+
+        storageReference = FirebaseStorage.getInstance().getReference();
+        database = FirebaseDatabase.getInstance();
+        databaseReference = database.getReference("JobModel");
     }
 
     //Set the options menu on the action bar
@@ -146,26 +163,65 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
 
     public void onPostBtnClick(View view) {
-        //getting the rest of the data
-        String depName = uDepName.getText().toString();
-        String jobType = uJobType.getText().toString();
-        String recruiterEmail = uRecruiterEmail.getText().toString();
-        String minSalary = uMinSalary.getText().toString();
-        String maxSalary = uMaxSalary.getText().toString();
-        String salaryNegotiability = String.valueOf(isSalaryNegotiable.isChecked());
-
-        if(salaryNegotiability == "true"){
-            minSalary = "0";
-            maxSalary = "0";
-        }
-
-
-        String uKey = mDatabaseReference.push().getKey();
-
-        JobModel jobModel = new JobModel(companyName, isNameHidden,vacantPosition,location,Integer.parseInt(employeeNeeded),deadline, depName,jobType,recruiterEmail,Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability);
-        mDatabaseReference.child(uKey).push().setValue(jobModel);
-
-        Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent();
+        intent.setType("application/pdf");
+        intent.setAction(intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Choose A Pdf File"), 12);
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 12 && resultCode == RESULT_OK && data !=null && data.getData() !=null){
+            uploadPdfFile(data.getData());
+        }
+    }
+
+    private void uploadPdfFile(Uri data) {
+        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("Uploading Pdf File");
+        progressDialog.show();
+
+        StorageReference refr =  storageReference.child("uploadPDF: "+System.currentTimeMillis()+".pdf");
+        refr.putFile(data)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
+                        while ((!uriTask.isComplete()));
+                        Uri uri = uriTask.getResult();
+
+                        //getting the rest of the data
+                        String depName = uDepName.getText().toString();
+                        String jobType = uJobType.getText().toString();
+                        String recruiterEmail = uRecruiterEmail.getText().toString();
+                        String minSalary = uMinSalary.getText().toString();
+                        String maxSalary = uMaxSalary.getText().toString();
+                        String salaryNegotiability = String.valueOf(isSalaryNegotiable.isChecked());
+
+                        if(salaryNegotiability == "true"){
+                            minSalary = "0";
+                            maxSalary = "0";
+                        }
+
+                        String uKey = mDatabaseReference.push().getKey();
+
+                        JobModel jobModel = new JobModel(companyName, isNameHidden,vacantPosition,location,
+                                Integer.parseInt(employeeNeeded),deadline, depName,jobType,recruiterEmail,
+                                Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability,"test",uri.toString());
+                        mDatabaseReference.child(uKey).push().setValue(jobModel);
+
+                        Toast.makeText(getApplicationContext(), "Data Upload Successfully", Toast.LENGTH_SHORT).show();
+                        progressDialog.dismiss();
+                        Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
+                        startActivity(intent);
+                    }
+                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onProgress(@NonNull @NotNull UploadTask.TaskSnapshot snapshot) {
+
+            }
+        });
+    }
+
 }
