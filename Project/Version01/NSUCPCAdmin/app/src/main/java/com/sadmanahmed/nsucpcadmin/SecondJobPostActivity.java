@@ -164,7 +164,7 @@ public class SecondJobPostActivity extends AppCompatActivity {
 
         JobModel jobModel = new JobModel(companyName, isNameHidden,vacantPosition,location,Integer.parseInt(employeeNeeded),deadline, depName,jobType,recruiterEmail,Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability);
         mDatabaseReference.child(uKey).push().setValue(jobModel);
-        
+
         Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
         startActivity(intent);
     }
