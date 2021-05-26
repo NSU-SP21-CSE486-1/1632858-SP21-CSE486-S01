@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpcadmin.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,8 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.sadmanahmed.nsucpcadmin.R;
+import com.sadmanahmed.nsucpcadmin.session.SessionManagement;
 
 public class FirstJobPostActivity extends AppCompatActivity {
     //declaring necessary variables

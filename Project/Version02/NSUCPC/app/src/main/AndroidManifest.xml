@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NSUCPC">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".uicomponents.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SecondRegisterActivity" />
-        <activity android:name=".FirstRegisterActivity">
+        <activity android:name=".uicomponents.LoginActivity" />
+        <activity android:name=".uicomponents.SecondRegisterActivity" />
+        <activity android:name=".uicomponents.FirstRegisterActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".uicomponents.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

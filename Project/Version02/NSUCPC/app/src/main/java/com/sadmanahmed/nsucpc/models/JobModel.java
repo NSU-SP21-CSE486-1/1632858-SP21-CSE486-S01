@@ -1,20 +1,20 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.models;
 
 public class JobModel {
-    String companyName;
-    String isNameHidden;
-    String vacantPosition;
-    String location;
-    int employeeNeeded;
-    String deadline;
-    String depName;
-    String jobType;
-    String recruiterEmail;
-    int minSalary;
-    int maxSalary;
-    String isSalaryNegotiable;
-    String name;
-    String uri;
+    public String companyName;
+    public String isNameHidden;
+    public String vacantPosition;
+    public String location;
+    public int employeeNeeded;
+    public String deadline;
+    public String depName;
+    public String jobType;
+    public String recruiterEmail;
+    public int minSalary;
+    public int maxSalary;
+    public String isSalaryNegotiable;
+    public String name;
+    public String uri;
 
     public JobModel(String companyName, String isNameHidden, String vacantPosition, String location, int employeeNeeded, String deadline, String depName, String jobType, String recruiterEmail, int minSalary, int maxSalary, String isSalaryNegotiable, String name, String uri) {
         this.companyName = companyName;

@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.uicomponents;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,9 +15,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.sadmanahmed.nsucpc.R;
+import com.sadmanahmed.nsucpc.adapters.RecyclerViewAdapter;
+import com.sadmanahmed.nsucpc.session.SessionManagement;
+import com.sadmanahmed.nsucpc.models.JobModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mListviewer;
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void inLogoutClick(View view) {
+    public void onLogoutClick(View view) {
         FirebaseAuth.getInstance().signOut();
         SessionManagement sessionManagement = new SessionManagement(MainActivity.this);
         sessionManagement.removeSession();

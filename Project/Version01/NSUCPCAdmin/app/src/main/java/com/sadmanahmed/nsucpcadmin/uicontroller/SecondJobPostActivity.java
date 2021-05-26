@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpcadmin.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,6 +30,9 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.sadmanahmed.nsucpcadmin.R;
+import com.sadmanahmed.nsucpcadmin.session.SessionManagement;
+import com.sadmanahmed.nsucpcadmin.models.JobModel;
 
 import static android.R.layout.simple_list_item_1;
 
@@ -213,7 +216,7 @@ public class SecondJobPostActivity extends AppCompatActivity {
                                 Integer.parseInt(minSalary),Integer.parseInt(maxSalary),salaryNegotiability,uri.toString(),uri.toString());
                         mDatabaseReference.child(uKey).setValue(jobModel);
                         progressDialog.dismiss();
-                        Intent intent = new Intent(SecondJobPostActivity.this,SuccessfullPostActivity.class);
+                        Intent intent = new Intent(SecondJobPostActivity.this, SuccessfullPostActivity.class);
                         startActivity(intent);
                     }
                 }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {

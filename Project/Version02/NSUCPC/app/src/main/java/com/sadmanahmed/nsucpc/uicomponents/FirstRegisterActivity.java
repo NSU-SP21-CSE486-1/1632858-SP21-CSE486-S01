@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.uicomponents;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.sadmanahmed.nsucpc.R;
 
 public class FirstRegisterActivity extends AppCompatActivity {
     private EditText uFullName;

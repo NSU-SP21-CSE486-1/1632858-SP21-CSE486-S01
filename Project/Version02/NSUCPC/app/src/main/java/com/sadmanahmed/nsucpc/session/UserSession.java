@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpc.session;
 
 public class UserSession {
     String email;

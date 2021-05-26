@@ -13,22 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NSUCPCAdmin">
-        <activity android:name=".SuccessfullPostActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".uicontroller.SuccessfullPostActivity"
+            android:parentActivityName=".uicontroller.MainActivity"></activity>
         <activity
-            android:name=".SecondJobPostActivity"
-            android:parentActivityName=".FirstJobPostActivity" />
+            android:name=".uicontroller.SecondJobPostActivity"
+            android:parentActivityName=".uicontroller.FirstJobPostActivity" />
         <activity
-            android:name=".FirstJobPostActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".uicontroller.FirstJobPostActivity"
+            android:parentActivityName=".uicontroller.MainActivity" />
         <activity
-            android:name=".ChangePasswordActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".uicontroller.ChangePasswordActivity"
+            android:parentActivityName=".uicontroller.MainActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".uicontroller.LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".uicontroller.SplashScreen"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".uicontroller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

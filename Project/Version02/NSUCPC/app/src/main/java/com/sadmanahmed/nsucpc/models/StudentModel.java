@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.models;
 
 public class StudentModel {
     String fullname;

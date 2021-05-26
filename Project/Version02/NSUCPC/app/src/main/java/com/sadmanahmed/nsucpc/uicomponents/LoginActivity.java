@@ -1,15 +1,12 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpc.uicomponents;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,41 +14,38 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.lang.ref.WeakReference;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.sadmanahmed.nsucpc.R;
+import com.sadmanahmed.nsucpc.session.SessionManagement;
+import com.sadmanahmed.nsucpc.session.UserSession;
 
 public class LoginActivity extends AppCompatActivity {
-    // declaring necessary variables
-    Window window;
-
     EditText mLoginEmail;
     EditText mLoginPassword;
     FirebaseAuth uAuth;
+    FirebaseDatabase database;
+    DatabaseReference mDatabaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        checkForRuntimePermissions();
 
-        //set status bar color
-        if(Build.VERSION.SDK_INT >= 21){
-            window = this.getWindow();
-            window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
-        }
-
-        // login authentication
         uAuth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        mDatabaseReference = database.getReference("StudentModel");
 
         mLoginEmail = findViewById(R.id.login_email_edittext);
         mLoginPassword = findViewById(R.id.login_password_edittext);
+
     }
 
-    private void checkForRuntimePermissions() {
-        new AndroidRunTimePermissions(new WeakReference<Activity>(this)).checkForPermissions();
+    public void onRegisterClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, FirstRegisterActivity.class);
+        startActivity(intent);
     }
 
-    public void onLoginBtnClick(View view) {
-        //checking the login authentication
+    public void onLoginClick(View view) {
         String email = mLoginEmail.getText().toString();
         String password = mLoginPassword.getText().toString();
 
@@ -93,6 +87,4 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }
-
-
 }

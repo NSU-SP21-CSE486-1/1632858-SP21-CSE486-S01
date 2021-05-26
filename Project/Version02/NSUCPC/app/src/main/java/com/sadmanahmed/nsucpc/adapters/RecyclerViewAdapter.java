@@ -1,8 +1,7 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -10,10 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.sadmanahmed.nsucpc.R;
+import com.sadmanahmed.nsucpc.models.JobModel;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
     public ArrayList<JobModel> getAllJobs;

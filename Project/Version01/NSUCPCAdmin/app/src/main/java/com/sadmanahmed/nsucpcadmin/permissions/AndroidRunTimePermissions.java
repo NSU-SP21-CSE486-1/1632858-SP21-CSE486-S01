@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpcadmin.permissions;
 
 import android.Manifest;
 import android.annotation.TargetApi;

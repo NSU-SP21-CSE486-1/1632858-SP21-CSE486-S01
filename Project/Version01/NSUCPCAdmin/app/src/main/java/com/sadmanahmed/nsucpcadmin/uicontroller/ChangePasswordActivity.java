@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpcadmin.uicontroller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.sadmanahmed.nsucpcadmin.R;
 
 public class ChangePasswordActivity extends AppCompatActivity {
 

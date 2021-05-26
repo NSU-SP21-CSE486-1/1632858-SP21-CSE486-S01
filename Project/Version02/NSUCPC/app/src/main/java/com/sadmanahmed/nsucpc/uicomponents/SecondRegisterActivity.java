@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpc.uicomponents;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.sadmanahmed.nsucpc.R;
+import com.sadmanahmed.nsucpc.models.StudentModel;
 
 import static android.R.layout.simple_list_item_1;
 

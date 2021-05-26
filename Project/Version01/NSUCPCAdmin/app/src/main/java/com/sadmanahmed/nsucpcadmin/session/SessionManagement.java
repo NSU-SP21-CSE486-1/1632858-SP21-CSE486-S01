@@ -1,10 +1,9 @@
-package com.sadmanahmed.nsucpc;
+package com.sadmanahmed.nsucpcadmin.session;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SessionManagement {
-
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     String SHARED_PREF_NAME = "session";

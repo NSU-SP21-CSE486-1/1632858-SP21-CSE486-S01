@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E5E5E5"
-    tools:context=".MainActivity">
+    tools:context=".uicomponents.MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -27,7 +27,8 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Hello John,"
+                android:text="@string/hello"
+                android:onClick="onLogoutClick"
                 android:textColor="#5A6E7E"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +42,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="60dp"
                 android:fontFamily="@font/poppins_light"
-                android:text="Welcome back"
+                android:text="@string/welcome_back"
                 android:textColor="#5A6E7E"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +68,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Recent Jobs"
+        android:text="@string/recent_jobs"
         android:textColor="#5A6E7E"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -1,4 +1,4 @@
-package com.sadmanahmed.nsucpcadmin;
+package com.sadmanahmed.nsucpcadmin.models;
 
 public class JobModel {
     String companyName;
