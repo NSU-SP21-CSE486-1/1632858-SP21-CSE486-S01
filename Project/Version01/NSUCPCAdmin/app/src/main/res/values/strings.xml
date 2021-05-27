@@ -22,4 +22,18 @@
     <string name="error_email">Please enter a valid email address</string>
     <string name="error_account">You have to become a admin to access the CPC employer app.</string>
     <string name="empty_password_error_message">Password cannot be empty</string>
+    <string name="hide_the_company_name">Hide the company name</string>
+    <string name="vacant_position">Vacant position</string>
+    <string name="location">Location</string>
+    <string name="number_of_employee_needed">Number of employee needed</string>
+    <string name="deadline">Deadline</string>
+    <string name="next">Next</string>
+    <string name="company_name">Company name</string>
+    <string name="choose_department">Choose department</string>
+    <string name="choose_job_type">Choose job type</string>
+    <string name="company_recruiter_email">Company recruiter email</string>
+    <string name="set_salary_range">Set salary range</string>
+    <string name="min_salary">Min salary</string>
+    <string name="max_salary">Max salary</string>
+    <string name="upload_a_pdf">Upload a PDF</string>
 </resources>
